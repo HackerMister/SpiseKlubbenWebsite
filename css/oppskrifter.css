@@ -76,3 +76,40 @@ body {
 
 /* oppskriftcss herunder*/
 
+.wrapper {
+    position: absolute;
+    left: 15vw;
+    width: 70vw;
+    top: 180px;
+}
+
+.oppskrift_title h1 {
+    font-size: 2.3em;
+    margin-bottom: 0;
+}
+
+.oppskrift_title p {
+    font-size: 0.8em;
+    margin: 20px 0px 20px 0px;
+}
+
+.fremgangsmåte {
+    float: left;
+    max-width: 40vw;
+    padding-left: 70px;
+}
+
+.fremgangsmåte li {
+    list-style-type: none;
+    margin-left: -40px;
+    line-height: 1.7;
+}
+
+.fremgangsmåte p {
+}
+
+.oppskrift_bilde img {
+    float: left;
+    width: 400px;
+    
+}
