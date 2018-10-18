@@ -76,3 +76,38 @@ body {
 
 /* oppskriftcss herunder*/
 
+.oppskrift {
+    position: absolute;
+    left: 15vw;
+    max-width: 70vw;
+    top: 180px;
+}
+
+.oppskrift_title h1 {
+    font-size: 2.3em;
+}
+
+.oppskrift_title p {
+    font-size: 0.8em;
+}
+
+.fremgangsmåte {
+    position: relative;
+    top: 120px;
+    left: 500px;
+    
+}
+
+.fremgangsmåte li {
+    list-style-type: none;    
+}
+
+.fremgangsmåte p {
+}
+
+.oppskrift_bilde img {
+    position: absolute;
+    top: 120px;
+    width: 400px;
+    
+}
