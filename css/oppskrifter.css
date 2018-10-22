@@ -79,12 +79,14 @@ body {
 /* wwrap is to center the wrapper, I didn't manage to find a better solution*/
 .wwrap{
     position: absolute;
-    left: 50%;
+    
 }
 
 .wrapper {
+    /*position: relative;
+    left: -50%;*/
     position: relative;
-    left: -50%;
+    margin: auto;
     width: 950px;
     top: 180px;
 }
@@ -123,5 +125,21 @@ body {
 @media screen and (max-width: 500px){
     body{
         color: aqua;
+    }
+    
+.wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
+    
+    .oppskrift_bilde img {
+        float:inherit ;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .fremgangsmåte {
+        position: static
     }
 }
