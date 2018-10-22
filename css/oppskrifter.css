@@ -76,10 +76,18 @@ body {
 
 /* oppskriftcss herunder*/
 
-.wrapper {
+/* wwrap is to center the wrapper, I didn't manage to find a better solution*/
+.wwrap{
     position: absolute;
-    left: 15vw;
-    width: 70vw;
+    
+}
+
+.wrapper {
+    /*position: relative;
+    left: -50%;*/
+    position: relative;
+    margin: auto;
+    width: 950px;
     top: 180px;
 }
 
@@ -94,15 +102,14 @@ body {
 }
 
 .fremgangsmåte {
-    float: left;
-    max-width: 40vw;
-    padding-left: 70px;
+    position: absolute;
+    left: 470px;
 }
 
 .fremgangsmåte li {
     list-style-type: none;
     margin-left: -40px;
-    line-height: 1.7;
+    padding-bottom: 0.7em;
 }
 
 .fremgangsmåte p {
@@ -111,5 +118,28 @@ body {
 .oppskrift_bilde img {
     float: left;
     width: 400px;
+}
+
+/*media queries til skermer under 500 px*/
+
+@media screen and (max-width: 500px){
+    body{
+        color: aqua;
+    }
     
+.wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
+    
+    .oppskrift_bilde img {
+        float:inherit ;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .fremgangsmåte {
+        position: static
+    }
 }
