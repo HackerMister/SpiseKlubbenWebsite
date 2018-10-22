@@ -2,11 +2,15 @@ html {
     background: #282828;
     /*Temp font*/
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 body {
     color: #f0f0f0;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 #navbar ul {
@@ -34,6 +38,7 @@ a {
     text-decoration: underline;
     text-decoration-color: #c39c70;
 }
+
 
 .eventContainer {
     display: flex;
@@ -79,18 +84,14 @@ a {
 
 /* css til Kontakt.html */
 
-#kontaktbody {
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
-}
 
-#kontaktcontent {
+content {
     position: absolute;
     text-align: left;
-    top: 180px;
+    top: 130px;
     left: 30%;
-    right: 30%; 
+    right: 30%;
+
 }
 
 #kp3 {
@@ -100,3 +101,50 @@ a {
     width: 90px;
 }
 
+/* css til Footer */
+
+footer {
+    background-color: #1C1C1C;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    bottom: -250px;
+    display: block;
+}
+
+#facebook {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+#instagram {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+
+#footer1 {
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    width: 150px;
+
+}
+
+#footer2 {
+    font-size: 8pt;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 150px;
+    text-align: center;
+
+}
