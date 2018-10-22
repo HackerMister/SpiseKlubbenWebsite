@@ -6,6 +6,7 @@ html {
 
 body {
     color: #f0f0f0;
+    position: relative;
 }
 
 #navbar ul {
@@ -76,18 +77,13 @@ body {
 
 /* oppskriftcss herunder*/
 
-/* wwrap is to center the wrapper, I didn't manage to find a better solution*/
-.wwrap{
-    position: absolute;
-    
-}
-
 .wrapper {
-    /*position: relative;
-    left: -50%;*/
-    position: relative;
-    margin: auto;
+    position: absolute;
     width: 950px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     top: 180px;
 }
 
@@ -112,21 +108,17 @@ body {
     padding-bottom: 0.7em;
 }
 
-.fremgangsmåte p {
-}
 
 .oppskrift_bilde img {
     float: left;
     width: 400px;
 }
 
+
 /*media queries til skermer under 500 px*/
 
 @media screen and (max-width: 500px){
-    body{
-        color: aqua;
-    }
-    
+       
 .wrapper {
     width: 90vw;
     top: 180px;
@@ -134,7 +126,7 @@ body {
     }
     
     .oppskrift_bilde img {
-        float:inherit ;
+        float: inherit;
         width: 100%;
         max-width: 400px;
     }
