@@ -92,6 +92,68 @@ a:hover:not(.active), .eventText h2:hover {
     padding-top: 10px;
 }
 
+/* CSS til event form */
+
+* { /* If not enabled, text forms span outside element*/
+    box-sizing: border-box;
+}
+
+.open-button {
+    cursor: pointer;
+}
+
+.form-popup  {
+    display: none;
+    position: absolute;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.formContainer {
+    
+    max-width: 350px;
+    padding: 10px;
+    background-color: #282828;
+}
+
+.formContainer input[type=text], 
+.formContainer input[type=email],
+.formContainer input[type=datetime-local] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.formContainer input[type=text]:focus, 
+.formContainer input[type=email]:focus,
+.formContainer input[type=datetime-local]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+
+.formContainer .btn {
+    background-color: #c39c70;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.formContainer .cancel {
+    background-color: rgb(211, 68, 68);
+  }
+
 /* css til Kontakt.html */
 
 
