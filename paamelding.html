@@ -15,11 +15,7 @@
 
 <body>
     <div id="navbar">
-
-        <img src="img/logo_TEMPORARY.png" alt="spisehval" width="200px">
-
         <img src="img/spiseklubben%20bare%20navn%20uten%20logo.png" alt="spiseklubben" width="200px">
-
 
         <ul>
             <li><a href="paamelding.html" class="active">Påmelding</a></li>
@@ -35,20 +31,12 @@
         <div id="hostEvent">
             <div class="eventText">
 
-                <img class="open-button" src="img/tmp_host_dinner.PNG" alt="host dinner whale" onclick="openHostForm()">
 
-                <h2 class="open-button" onclick="openHostForm()">Arranger et middagsselskap</h2>
-
-
-
-
-                <h2>Arranger et middagsselskap</h2>
-                <button>Temp Button!</button>
+             
 
                 <img class="open-button" src="img/tmp_host_dinner.PNG" alt="host dinner whale" onclick="openHostForm()">
 
                 <h2 class="open-button" onclick="openHostForm()">Arranger et middagsselskap</h2>
-
 
 
             </div>
@@ -57,22 +45,13 @@
         <div id="joinEvent">
             <div class="eventText">
 
-                <img class="open-button" src="img/tmp_join_dinner.PNG" alt="join dinner whale" onclick="openJoinForm()">
 
-
-                <h2 class="open-button" onclick="openJoinForm()">Bli med på et middagsselskap</h2>
-
-
-
-
-                <h2>Bli med på et middagsselskap</h2>
-                <button>Temp Button!</button>
+              
 
                 <img class="open-button" src="img/tmp_join_dinner.PNG" alt="join dinner whale" onclick="openJoinForm()">
 
 
                 <h2 class="open-button" onclick="openJoinForm()">Bli med på et middagsselskap</h2>
-
 
 
 
@@ -102,7 +81,6 @@
     </div>
 
     <div class="form-popup" id="joinDinnerForm">
-
         <form class="formContainer" action="/fake_action.html" method="post">
             <label for="name">Navn:</label>
             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -117,22 +95,6 @@
             <button type="button" class="btn cancel" onclick="closeJoinForm()">Cancel</button>
         </form>
     </div>
-
-    <form class="formContainer" action="/fake_action.html" method="post">
-        <label for="name">Navn:</label>
-        <input type="text" name="name" id="name" placeholder="Your name" required>
-
-        <label for="email">Epost:</label>
-        <input type="email" name="email" id="email" placeholder="email@address.com" required>
-
-        <label for="dinnerTime">Tidspunkt:</label>
-        <input type="date" name="dinnerTime" id="dinnerTime" required>
-
-        <button type="submit" class="btn">Bli med!</button>
-        <button type="button" class="btn cancel" onclick="closeJoinForm()">Cancel</button>
-    </form>
-
-
 
     <script>
         function openHostForm() {
@@ -150,7 +112,6 @@
         function closeJoinForm() {
             document.getElementById("joinDinnerForm").style.display = "none";
         }
-
     </script>
 
 </body>
