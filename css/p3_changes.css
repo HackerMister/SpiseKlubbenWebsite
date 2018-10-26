@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: helvetica;
     background-color: #E1E3E5;
@@ -115,3 +116,122 @@ tr,
 td {
     border: 1px solid black;
 }
+=======
+body {
+    font-family: helvetica;
+    background-color: #E1E3E5;
+    padding: 0;
+    margin: auto;
+    text-align: left;
+    min-height: 100%;
+}
+
+header {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+img.spisebilde {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 60%;
+}
+
+.contentbilder {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.diagram {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+h5,
+h6 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 15px;
+    margin-top: 0.5em;
+}
+
+.content {
+    margin: auto;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-top: 1%;
+    max-width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+
+footer {
+    bottom: 0px;
+    text-align: center;
+    margin-top: 150px;
+    padding-bottom: 10px;
+}
+
+section {
+    padding-top: 1%;
+    padding-left: 10px;
+    border-top: black 1px solid;
+    margin-top: 40px;
+}
+
+a:link {
+    text-decoration-line: none;
+    color: sienna;
+
+}
+
+a:visitet: {
+    color: lightgray;
+}
+
+a:hover {
+    color: coral;
+    text-decoration-line: underline;
+}
+
+a:active {
+    color: chartreuse;
+}
+
+table,
+tbody,
+tr,
+td {
+    border: 1px solid black;
+}
+>>>>>>> håvard
