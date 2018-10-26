@@ -15,7 +15,8 @@
 
 <body>
     <div id="navbar">
-        <img src="" alt="spisehval" width="200px">
+        <img src="img/spiseklubben%20bare%20navn%20uten%20logo.png" alt="spiseklubben" width="200px">
+
         <ul>
             <li><a href="paamelding.html" class="active">Påmelding</a></li>
             <li><a href="Oppskrifter.html">Oppskrifter</a> </li>
@@ -29,19 +30,91 @@
     <div class="eventContainer">
         <div id="hostEvent">
             <div class="eventText">
+
+
                 <h2>Arranger et middagsselskap</h2>
                 <button>Temp Button!</button>
+
+                <img class="open-button" src="img/tmp_host_dinner.PNG" alt="host dinner whale" onclick="openHostForm()">
+
+                <h2 class="open-button" onclick="openHostForm()">Arranger et middagsselskap</h2>
+
+
             </div>
 
         </div>
         <div id="joinEvent">
             <div class="eventText">
+
+
                 <h2>Bli med på et middagsselskap</h2>
                 <button>Temp Button!</button>
+
+                <img class="open-button" src="img/tmp_join_dinner.PNG" alt="join dinner whale" onclick="openJoinForm()">
+
+
+                <h2 class="open-button" onclick="openJoinForm()">Bli med på et middagsselskap</h2>
+
+
+
             </div>
 
         </div>
     </div>
+
+    <div class="form-popup" id="hostDinnerForm">
+        <form class="formContainer" action="/fake_action.html" method="post">
+            <label for="name">Navn:</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+
+            <label for="email">Epost:</label>
+            <input type="email" name="email" id="email" placeholder="email@address.com" required>
+
+
+            <label for="hero">Middagsrett:</label>
+            <input type="text" name="hero" id="hero" placeholder="What are you making?" required>
+
+            <label for="dinnerTime">Tidspunkt:</label>
+            <input type="datetime-local" name="dinnerTime" id="dinnerTime" required>
+
+            <button type="submit" class="btn">Arranger selskap!</button>
+            <button type="button" class="btn cancel" onclick="closeHostForm()">Cancel</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="joinDinnerForm">
+        <form class="formContainer" action="/fake_action.html" method="post">
+            <label for="name">Navn:</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+
+            <label for="email">Epost:</label>
+            <input type="email" name="email" id="email" placeholder="email@address.com" required>
+
+            <label for="dinnerTime">Tidspunkt:</label>
+            <input type="date" name="dinnerTime" id="dinnerTime" required>
+
+            <button type="submit" class="btn">Bli med!</button>
+            <button type="button" class="btn cancel" onclick="closeJoinForm()">Cancel</button>
+        </form>
+    </div>
+
+    <script>
+        function openHostForm() {
+            document.getElementById("hostDinnerForm").style.display = "block";
+        }
+
+        function closeHostForm() {
+            document.getElementById("hostDinnerForm").style.display = "none";
+        }
+
+        function openJoinForm() {
+            document.getElementById("joinDinnerForm").style.display = "block";
+        }
+
+        function closeJoinForm() {
+            document.getElementById("joinDinnerForm").style.display = "none";
+        }
+    </script>
 
 </body>
 
