@@ -39,6 +39,11 @@ a {
     text-decoration-color: #c39c70;
 }
 
+a:hover:not(.active), .eventText h2:hover {
+    text-decoration: underline;
+    text-decoration-color: #c39c70;
+}
+
 
 .eventContainer {
     display: flex;
@@ -64,6 +69,7 @@ a {
 #joinEvent {
     flex: 1;
     border-left: solid;
+    justify-content: center;
     border-left-color: #c39c70;
     border-left-width: 1px;
 
@@ -76,13 +82,14 @@ a {
     height: 300px;
 }
 
-.eventText {
+.eventText, h2 {
     width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
+
     text-align: center;
     margin: auto;
+    padding-top: 10px;
 }
 
 /* css til Kontakt.html */
