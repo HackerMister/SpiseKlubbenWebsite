@@ -47,6 +47,10 @@ a {
     margin: auto;
     padding: 15px;
 }
+.eventWhale {
+    border-color: red;
+    border-radius: 1px;
+}
 
 .eventContainer button {
     width: 50%;
