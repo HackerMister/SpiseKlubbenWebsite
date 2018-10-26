@@ -87,29 +87,29 @@ body {
     top: 180px;
 }
 
-.oppskrift_title h1 {
+.ukasrett_title h1 {
     font-size: 2.3em;
     margin-bottom: 0;
 }
 
-.oppskrift_title p {
+.ukasrett_title p {
     font-size: 0.8em;
     margin: 20px 0px 20px 0px;
 }
 
-.fremgangsmåte {
-    position: absolute;
-    left: 470px;
+.ukasrett_fremgangsmåte {
+ /*   position: absolute;
+    left: 470px;*/
 }
 
-.fremgangsmåte li {
+.ukasrett_fremgangsmåte li {
     list-style-type: none;
     margin-left: -40px;
     padding-bottom: 0.7em;
 }
 
 
-.oppskrift_bilde img {
+.ukasrett_bilde img {
     float: left;
     width: 400px;
 }
@@ -125,13 +125,13 @@ body {
     margin: auto;
     }
     
-    .oppskrift_bilde img {
+    .ukasrett_bilde img {
         float: inherit;
         width: 100%;
         max-width: 400px;
     }
     
-    .fremgangsmåte {
+    .ukasrett_fremgangsmåte {
         position: static
     }
 }
