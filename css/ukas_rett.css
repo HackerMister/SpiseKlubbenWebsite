@@ -84,12 +84,16 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 180px;
+    top: 200px;
+}
+
+.ukasrett_title{
+   float: right
 }
 
 .ukasrett_title h1 {
     font-size: 2.3em;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .ukasrett_title p {
@@ -97,9 +101,12 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
+.ukasrett_title img {
+    width: 400px;
+}
+
 .ukasrett_fremgangsmåte {
- /*   position: absolute;
-    left: 470px;*/
+    width: 450px
 }
 
 .ukasrett_fremgangsmåte li {
@@ -108,11 +115,10 @@ body {
     padding-bottom: 0.7em;
 }
 
-
-.ukasrett_bilde img {
-    float: left;
-    width: 400px;
+.ukasrett_fremgangsmåte p:first-of-type {   
+    margin-top: 7px;
 }
+
 
 
 /*media queries til skermer under 500 px*/
@@ -125,13 +131,12 @@ body {
     margin: auto;
     }
     
-    .ukasrett_bilde img {
-        float: inherit;
+    .ukasrett_title img {
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
     }
     
     .ukasrett_fremgangsmåte {
-        position: static
+        position: static;
     }
 }
