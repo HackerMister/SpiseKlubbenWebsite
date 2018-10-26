@@ -15,7 +15,7 @@
 
 <body>
     <div id="navbar">
-        <img src="" alt="spisehval" width="200px">
+        <img src="img/logo_TEMPORARY.png" alt="spisehval" width="200px">
         <ul>
             <li><a href="paamelding.html" class="active">Påmelding</a></li>
             <li><a href="Oppskrifter.html">Oppskrifter</a> </li>
@@ -29,19 +29,19 @@
     <div class="eventContainer">
         <div id="hostEvent">
             <div class="eventText">
-                <img class="open-button" src="img/tmp_host_dinner.PNG" alt="host dinner whale" onclick="openForm()">
+                <img class="open-button" src="img/tmp_host_dinner.PNG" alt="host dinner whale" onclick="openHostForm()">
                 
-                    <h2 class="open-button" onclick="openForm()">Arranger et middagsselskap</h2>
+                    <h2 class="open-button" onclick="openHostForm()">Arranger et middagsselskap</h2>
                 </a>
             </div>
 
         </div>
         <div id="joinEvent">
             <div class="eventText">
-                <img class="open-button" src="img/tmp_join_dinner.PNG" alt="join dinner whale" onclick="openForm()">
+                <img class="open-button" src="img/tmp_join_dinner.PNG" alt="join dinner whale" onclick="openJoinForm()">
 
                 
-                    <h2 class="open-button" onclick="openForm()">Bli med på et middagsselskap</h2>
+                    <h2 class="open-button" onclick="openJoinForm()">Bli med på et middagsselskap</h2>
                 </a>
 
             </div>
@@ -65,7 +65,7 @@
             <input type="datetime-local" name="dinnerTime" id="dinnerTime" required>
 
             <button type="submit" class="btn">Arranger selskap!</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            <button type="button" class="btn cancel" onclick="closeHostForm()">Cancel</button>
         </form>
     </div>
 
@@ -78,20 +78,28 @@
                 <input type="email" name="email" id="email" placeholder="email@address.com" required>
     
                 <label for="dinnerTime">Tidspunkt:</label>
-                <input type="datetime-local" name="dinnerTime" id="dinnerTime" required>
+                <input type="date" name="dinnerTime" id="dinnerTime" required>
     
                 <button type="submit" class="btn">Bli med!</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                <button type="button" class="btn cancel" onclick="closeJoinForm()">Cancel</button>
             </form>
         </div>
 
     <script>
-        function openForm() {
+        function openHostForm() {
             document.getElementById("hostDinnerForm").style.display = "block";
         }
 
-        function closeForm() {
+        function closeHostForm() {
             document.getElementById("hostDinnerForm").style.display = "none";
+        }
+
+        function openJoinForm() {
+            document.getElementById("joinDinnerForm").style.display = "block";
+        }
+
+        function closeJoinForm() {
+            document.getElementById("joinDinnerForm").style.display = "none";
         }
     </script>
 
