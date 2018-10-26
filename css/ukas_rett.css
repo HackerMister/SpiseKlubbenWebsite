@@ -92,17 +92,18 @@ body {
 }
 
 .ukasrett_title h1 {
-    font-size: 2.3em;
+    font-size: 3em;
     margin: 0;
 }
 
 .ukasrett_title p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 20px 0px 20px 0px;
 }
 
 .ukasrett_title img {
     width: 400px;
+    margin-bottom: 20px;
 }
 
 .ukasrett_fremgangsmåte {
@@ -117,6 +118,7 @@ body {
 
 .ukasrett_fremgangsmåte p:first-of-type {   
     margin-top: 7px;
+    margin-bottom: 28px;
 }
 
 
@@ -138,5 +140,6 @@ body {
     
     .ukasrett_fremgangsmåte {
         position: static;
+        width: 100%;
     }
 }
