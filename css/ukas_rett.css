@@ -1,0 +1,137 @@
+html {
+    background: #282828;
+    /*Temp font*/
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: #f0f0f0;
+    position: relative;
+}
+
+#navbar ul {
+    list-style-type: none;
+    float: right;
+    overflow: hidden;
+}
+
+#navbar li, a {
+    float: left;
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 8px 10px;
+    font-size: 14pt;
+}
+
+#navbar a.active {
+    text-decoration: underline;
+    text-decoration-color: #c39c70;
+}
+
+#navbar li a:hover:not(.active) {
+    text-decoration: underline;
+    text-decoration-color: #c39c70;
+}
+
+.eventContainer {
+    display: flex;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    padding: 15px;
+}
+
+.eventContainer button {
+    width: 50%;
+}
+
+/* #hostEvent og #joinEvent benytter flexbox for å 
+    stå ved siden av hverandre */
+#hostEvent {
+    flex: 0 0 65%;
+}
+
+#joinEvent {
+    flex: 1;
+    border-left: solid;
+    border-left-color: #c39c70;
+    border-left-width: 1px;
+    
+}
+
+#hostEvent, #joinEvent {
+    flex: 1 1 50%;
+    position: relative;
+    height: 300px;
+}
+
+.eventText {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* oppskriftcss herunder*/
+
+.wrapper {
+    position: absolute;
+    width: 950px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 180px;
+}
+
+.oppskrift_title h1 {
+    font-size: 2.3em;
+    margin-bottom: 0;
+}
+
+.oppskrift_title p {
+    font-size: 0.8em;
+    margin: 20px 0px 20px 0px;
+}
+
+.fremgangsmåte {
+    position: absolute;
+    left: 470px;
+}
+
+.fremgangsmåte li {
+    list-style-type: none;
+    margin-left: -40px;
+    padding-bottom: 0.7em;
+}
+
+
+.oppskrift_bilde img {
+    float: left;
+    width: 400px;
+}
+
+
+/*media queries til skermer under 500 px*/
+
+@media screen and (max-width: 500px){
+       
+.wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
+    
+    .oppskrift_bilde img {
+        float: inherit;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .fremgangsmåte {
+        position: static
+    }
+}
