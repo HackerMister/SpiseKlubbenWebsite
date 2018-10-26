@@ -42,14 +42,13 @@ a {
 
 .eventContainer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
     width: 80%;
-    height: 200px;
+    
     margin: auto;
     padding: 15px;
-}
-.eventWhale {
-    border-color: red;
-    border-radius: 1px;
 }
 
 .eventContainer button {
