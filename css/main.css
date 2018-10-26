@@ -56,20 +56,14 @@ a:hover:not(.active), .eventText h2:hover {
     padding: 15px;
 }
 
-.eventContainer button {
-    width: 50%;
-}
 
-/* #hostEvent og #joinEvent benytter flexbox for å 
-    stå ved siden av hverandre */
 #hostEvent {
-    flex: 0 0 65%;
+
+    
 }
 
-#joinEvent {
-    flex: 1;
+#joinEvent { 
     border-left: solid;
-    justify-content: center;
     border-left-color: #c39c70;
     border-left-width: 1px;
 
@@ -77,19 +71,15 @@ a:hover:not(.active), .eventText h2:hover {
 
 #hostEvent,
 #joinEvent {
-    flex: 1 1 50%;
-    position: relative;
-    height: 300px;
+    width: 50%;
+    min-height: 500px;
+    float: left;
+    text-align: center;
+    display: inline-block;
 }
 
-.eventText, h2 {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-
-    text-align: center;
-    margin: auto;
-    padding-top: 10px;
+.eventText {
+    
 }
 
 /* CSS til event form */
