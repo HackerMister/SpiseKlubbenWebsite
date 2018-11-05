@@ -263,3 +263,12 @@ footer {
     left: 0;
 }
 
+/*CSS til popup*/ 
+
+#hostDinnerForm, #joinDinnerForm {
+    width: 300px;
+    position: absolute;
+    bottom: 100px;
+}
+
+
