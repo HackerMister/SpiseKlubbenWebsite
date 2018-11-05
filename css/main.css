@@ -379,6 +379,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 
 .oppskrift div {
@@ -386,14 +387,15 @@ footer {
     height: 366px;
     margin: 30px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .oppskrift div img {
     height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
 }
 
+.oppskrift h2 {
+    font-size: 1.6em;
+    margin-left: 30px
+}
