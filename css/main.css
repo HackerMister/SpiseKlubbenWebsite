@@ -373,3 +373,27 @@ footer {
     }
 }
 
+/* OPPSKRIFT-OVERSIKT css*/
+
+.opp_oversikt_flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.oppskrift div {
+    width: 236px;
+    height: 366px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.oppskrift div img {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
