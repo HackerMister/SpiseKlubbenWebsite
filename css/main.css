@@ -273,7 +273,7 @@ footer {
 
 /* css til hver enkel oppskrift*/
 
-.oppskrift_wrapper, ukasrett_wrapper {
+.oppskrift_wrapper, .ukasrett_wrapper {
     position: absolute;
     width: 950px;
     left: 0;
@@ -315,7 +315,7 @@ footer {
 
 @media screen and (max-width: 500px){
        
-.oppskrift_wrapper, ukasrett_wrapper {
+.oppskrift_wrapper, .ukasrett_wrapper {
     width: 90vw;
     top: 180px;
     margin: auto;
@@ -335,7 +335,7 @@ footer {
 
 /* Ukas rett css */
 
-}
+/*se under oppskrifter for wrapper*/
 
 .ukasrett_title{
    float: right
@@ -376,11 +376,7 @@ footer {
 
 @media screen and (max-width: 500px){
        
-.wrapper {
-    width: 90vw;
-    top: 180px;
-    margin: auto;
-    }
+    /*se under oppskrifter for wrapper*/
     
     .ukasrett_title img {
         width: 100%;
