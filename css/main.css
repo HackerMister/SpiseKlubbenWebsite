@@ -272,3 +272,12 @@ footer {
 }
 
 
+/*CSS til navbar for scrolling*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
