@@ -1,7 +1,7 @@
 html {
     background: #282828;
     /*Temp font*/
-    font-family: 'Raleway', sans-serif;
+    font-family:'Raleway', sans-serif;
 
 }
 
@@ -239,3 +239,36 @@ footer {
     text-align: center;
 
 }
+
+/*CSS til galleri*/ 
+
+#galleryWrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.galleryContainer {
+    display: inline-block;
+
+    max-height: 600px;
+    max-width: 700px;
+    overflow: hidden;
+    margin: 1px;
+}
+.mySlides {
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+/*CSS til popup*/ 
+
+#hostDinnerForm, #joinDinnerForm {
+    width: 300px;
+    position: absolute;
+    bottom: 100px;
+}
+
+
