@@ -271,4 +271,125 @@ footer {
     bottom: 100px;
 }
 
+/* css til hver enkel oppskrift*/
+
+.oppskrift_wrapper, ukasrett_wrapper {
+    position: absolute;
+    width: 950px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+}
+
+.oppskrift_title h1 {
+    font-size: 2.3em;
+    margin: 0;
+}
+
+.oppskrift_title p {
+    font-size: 0.8em;
+    margin: 20px 0px 20px 0px;
+}
+
+.fremgangsmåte {
+    position: absolute;
+    left: 470px;
+}
+
+.fremgangsmåte li {
+    list-style-type: none;
+    margin-left: -40px;
+    padding-bottom: 0.7em;
+}
+
+
+.oppskrift_bilde img {
+    float: left;
+    width: 400px;
+}
+
+
+/*OPPSKRIFTER media queries til skermer under 500 px */
+
+@media screen and (max-width: 500px){
+       
+.oppskrift_wrapper, ukasrett_wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
+    
+    .oppskrift_bilde img {
+        float: inherit;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .fremgangsmåte {
+        position: static;
+    }
+}
+
+
+/* Ukas rett css */
+
+}
+
+.ukasrett_title{
+   float: right
+}
+
+.ukasrett_title h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.ukasrett_title p {
+    font-size: 0.9em;
+    margin: 20px 0px 20px 0px;
+}
+
+.ukasrett_title img {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.ukasrett_fremgangsmåte {
+    width: 450px
+}
+
+.ukasrett_fremgangsmåte li {
+    list-style-type: none;
+    margin-left: -40px;
+    padding-bottom: 0.7em;
+}
+
+.ukasrett_fremgangsmåte p:first-of-type {   
+    margin-top: 7px;
+    margin-bottom: 28px;
+}
+
+
+/*UKASRETT media queries til skermer under 500 px*/
+
+@media screen and (max-width: 500px){
+       
+.wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
+    
+    .ukasrett_title img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .ukasrett_fremgangsmåte {
+        position: static;
+        width: 100%;
+    }
+}
 
