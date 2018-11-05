@@ -271,7 +271,7 @@ footer {
     bottom: 100px;
 }
 
-/* css til hver enkel oppskrift*/
+/* css til oppskrifter (ikke oversigten)*/
 
 .oppskrift_wrapper, .ukasrett_wrapper {
     position: absolute;
@@ -293,12 +293,12 @@ footer {
     margin: 20px 0px 20px 0px;
 }
 
-.fremgangsmåte {
+.oppskrift_fremgangsmåte {
     position: absolute;
     left: 470px;
 }
 
-.fremgangsmåte li {
+.oppskrift_fremgangsmåte li {
     list-style-type: none;
     margin-left: -40px;
     padding-bottom: 0.7em;
@@ -308,29 +308,9 @@ footer {
 .oppskrift_bilde img {
     float: left;
     width: 400px;
+    margin-bottom: 20px;
 }
 
-
-/*OPPSKRIFTER media queries til skermer under 500 px */
-
-@media screen and (max-width: 500px){
-       
-.oppskrift_wrapper, .ukasrett_wrapper {
-    width: 90vw;
-    top: 180px;
-    margin: auto;
-    }
-    
-    .oppskrift_bilde img {
-        float: inherit;
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .fremgangsmåte {
-        position: static;
-    }
-}
 
 
 /* Ukas rett css */
@@ -372,18 +352,22 @@ footer {
 }
 
 
-/*UKASRETT media queries til skermer under 500 px*/
+/*UKASRETT & OPPSKRIFT media queries til skermer under 500 px*/
 
 @media screen and (max-width: 500px){
        
-    /*se under oppskrifter for wrapper*/
+    .oppskrift_wrapper, .ukasrett_wrapper {
+    width: 90vw;
+    top: 180px;
+    margin: auto;
+    }
     
-    .ukasrett_title img {
+    .ukasrett_title img, .oppskrift_bilde img {
         width: 100%;
         max-width: 500px;
     }
     
-    .ukasrett_fremgangsmåte {
+    .ukasrett_fremgangsmåte, .oppskrift_fremgangsmåte  {
         position: static;
         width: 100%;
     }
