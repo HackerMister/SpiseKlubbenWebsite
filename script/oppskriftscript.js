@@ -34,7 +34,7 @@ function w3RemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+// adds 'active' class to the selected button, 
 let buttons = document.querySelectorAll(".category_btn");
 console.log(buttons);
 

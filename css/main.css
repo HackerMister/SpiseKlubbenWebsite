@@ -20,8 +20,7 @@ body {
 
 }
 
-#navbar li,
-a {
+#navbar li, a {
     float: left;
     text-decoration: none;
     color: #f0f0f0;
