@@ -1,6 +1,6 @@
 /*eslint-env browser*/
 // script for oppskrift-oversikt
-/*stolen from: https://www.w3schools.com/howto/howto_js_portfolio_filter.asp*/
+/*stolen from: https://www.w3schools.com/howto/howto_js_portfolio_filter.asp  MÅ UTSKIFTES!!*/
 
 filterSelection("all")
 function filterSelection(c) {
@@ -34,8 +34,8 @@ function w3RemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-// adds 'active' class to the selected button, 
-let buttons = document.querySelectorAll(".category_btn");
+// adds 'active' class to the selected category, 
+let buttons = document.querySelectorAll('.category_selector');
 console.log(buttons);
 
 for (button of buttons) {

@@ -19,44 +19,14 @@
 
 /* Create three equal columns that floats next to each other */
 .category {
-  float: left;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
   display: none;
 }
-
-
-
-
-
 
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
-/*
-.category_btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.category_btn:hover {
-  background-color: #ddd;
-}
-
-.category_btn.active {
-  background-color: #666;
-  color: white;
-}
-*/
     </style>
     
 </head>
@@ -74,41 +44,19 @@
 
 <body>
     
-<!-- MAIN (Center website) -->
-<div class="main">
 
-
-  <div id="myBtnContainer">
-  <button class="category_btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="category_btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="category_btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="category_btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="category_btn" onclick="filterSelection('colors')"> Colors</button>
-</div>
-
-<div class="container">
-  <div class="category cars">BMW</div>
-  <div class="category colors fruits">Orange</div>
-  <div class="category cars">Volvo</div>
-  <div class="category colors">Red</div>
-  <div class="category cars animals">Mustang</div>
-  <div class="category colors">Blue</div>
-  <div class="category animals">Cat</div>
-  <div class="category animals">Dog</div>
-  <div class="category fruits">Melon</div>
-  <div class="category fruits animals">Kiwi</div>
-  <div class="category fruits">Banana</div>
-  <div class="category fruits">Lemon</div>
-  <div class="category animals">Cow</div>
-</div>
-
-<!-- END MAIN -->
-</div>
-
+    <div id="categories" >
+        <ul>
+            <li class="category_selector active" onclick="filterSelection('all')">Alle</li>
+            <li class="category_selector" onclick="filterSelection('frokost')">Frokost</li>
+            <li class="category_selector" onclick="filterSelection('lunsj')">Lunsj</li>
+            <li class="category_selector" onclick="filterSelection('middag')">Middag</li>
+        </ul>
+    </div>
     
     <div class="opp_oversikt_wrapper">
         
-        <div class="category cars" >
+        <div class="category middag" >
             <div>
                 <img src="img/Oppskrifter_tumbnails/biff_p%C3%A5_kniv_TEMP.png" alt="bare een biff!" >
             </div>
@@ -117,7 +65,7 @@
         
         </div>
         
-        <div class="category fruits" >
+        <div class="category lunsj" >
             <div>
                 <img src="img/Oppskrifter_tumbnails/kj%C3%B8ttdeig_i_kasserolle.jpg" alt="Kjøttdeig i kasserolle" >
             </div>

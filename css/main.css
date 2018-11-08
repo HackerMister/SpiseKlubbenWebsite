@@ -13,14 +13,14 @@ body {
     position: relative;
 }
 
-#navbar ul {
+#navbar ul, #categories li {
     list-style-type: none;
     float: right;
     overflow: hidden;
 
 }
 
-#navbar li, a {
+#navbar li, #categories li, a {
     float: left;
     text-decoration: none;
     color: #f0f0f0;
@@ -28,12 +28,12 @@ body {
     font-size: 14pt;
 }
 
-#navbar a.active {
+#navbar a.active, #categories li.active {
     text-decoration: underline;
     text-decoration-color: #c39c70;
 }
 
-#navbar li a:hover:not(.active) {
+#navbar li a:hover:not(.active), #categories li:hover:not(.active) {
     text-decoration: underline;
     text-decoration-color: #c39c70;
 }
@@ -397,4 +397,14 @@ footer {
 .oppskrift a {
     font-size: 1.6em;
     margin-left: 30px
+}
+
+/* dette hænger sammen med javascripten*/
+.category {
+    display: none;
+}
+
+/*dette hænger også sammen med javascripten*/
+.show {
+    display: block;
 }
