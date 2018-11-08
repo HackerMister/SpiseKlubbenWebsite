@@ -15,25 +15,22 @@
     <style>
 
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
-}
+
 
 /* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
+.category {
+  float: left;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
 }
 
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
+
+
 
 
 /* The "show" class is added to the filtered elements */
@@ -42,7 +39,8 @@
 }
 
 /* Style the buttons */
-.btn {
+/*
+.category_btn {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -50,14 +48,15 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.category_btn:hover {
   background-color: #ddd;
 }
 
-.btn.active {
+.category_btn.active {
   background-color: #666;
   color: white;
 }
+*/
     </style>
     
 </head>
@@ -78,107 +77,38 @@
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>MYLOGO.COM</h1>
-<hr>
 
-<h2>PORTFOLIO</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <div id="myBtnContainer">
+  <button class="category_btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="category_btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="category_btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="category_btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="category_btn" onclick="filterSelection('colors')"> Colors</button>
 </div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  
-  
-   <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column nature">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
- 
-  
-  <div class="column cars">
-    <div class="content">
-    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column cars">
-    <div class="content">
-    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column nature">
-    <div class="content">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column people">
-    <div class="content">
-    <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-<!-- END GRID -->
+<div class="container">
+  <div class="category cars">BMW</div>
+  <div class="category colors fruits">Orange</div>
+  <div class="category cars">Volvo</div>
+  <div class="category colors">Red</div>
+  <div class="category cars animals">Mustang</div>
+  <div class="category colors">Blue</div>
+  <div class="category animals">Cat</div>
+  <div class="category animals">Dog</div>
+  <div class="category fruits">Melon</div>
+  <div class="category fruits animals">Kiwi</div>
+  <div class="category fruits">Banana</div>
+  <div class="category fruits">Lemon</div>
+  <div class="category animals">Cow</div>
 </div>
 
 <!-- END MAIN -->
 </div>
 
-
     
-    <!--<div class="opp_oversikt_wrapper">
+    <div class="opp_oversikt_wrapper">
         
-        <div class="oppskrift" >
+        <div class="category cars" >
             <div>
                 <img src="img/Oppskrifter_tumbnails/biff_p%C3%A5_kniv_TEMP.png" alt="bare een biff!" >
             </div>
@@ -187,7 +117,7 @@
         
         </div>
         
-        <div class="oppskrift" >
+        <div class="category fruits" >
             <div>
                 <img src="img/Oppskrifter_tumbnails/kj%C3%B8ttdeig_i_kasserolle.jpg" alt="Kjøttdeig i kasserolle" >
             </div>
@@ -197,7 +127,7 @@
         </div>
         
 
-    </div> -->
+    </div> 
     
 <script src="script/oppskriftscript.js"></script>
 </body>
