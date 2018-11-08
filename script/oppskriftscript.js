@@ -5,7 +5,7 @@
 filterSelection("all")
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filterDiv");
+    x = document.getElementsByClassName("category");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
@@ -35,10 +35,8 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-
-
-let buttons = document.querySelectorAll(".btn");
-console.log(buttons)
+let buttons = document.querySelectorAll(".category_btn");
+console.log(buttons);
 
 for (button of buttons) {
     button.addEventListener('click', function() {
