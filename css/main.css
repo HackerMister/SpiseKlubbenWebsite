@@ -38,7 +38,7 @@ body {
     text-decoration-color: #c39c70;
 }
 
-a:hover:not(.active), .eventText h2:hover {
+a:hover:not(.active), .eventText h2:hover, .category p:hover {
     text-decoration: underline;
     text-decoration-color: #c39c70;
 }
@@ -401,7 +401,7 @@ content {
     
 }
 
-.oppskrift div {
+.category div {
     width: 236px;
     height: 366px;
     margin: 30px;
@@ -410,13 +410,17 @@ content {
     justify-content: center;
 }
 
-.oppskrift div img {
+.category div img {
     height: 100%;
 }
 
-.oppskrift a {
+.category a {
     font-size: 1.6em;
-    margin-left: 30px
+
+}
+
+.category p {
+    font-size: 1em,
 }
 
 /* dette hænger sammen med javascripten*/
@@ -427,4 +431,24 @@ content {
 /*dette hænger også sammen med javascripten*/
 .show {
     display: block;
+    
+}
+
+
+/*TIPS OG TRIKS CSS with thanks to https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.oppskriftbilde {
+    width: 20vw;
 }
