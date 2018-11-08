@@ -13,11 +13,10 @@ body {
     position: relative;
 }
 
-#navbar ul, #categories li {
+#navbar ul {
     list-style-type: none;
     float: right;
     overflow: hidden;
-
 }
 
 #navbar li, #categories li, a {
@@ -373,6 +372,14 @@ content {
 }
 
 /* OPPSKRIFT-OVERSIKT css*/
+
+#categories li {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 1.2em
+    
+}
+/*resten af #categories li styling ligger under navbar stylingen*/
 
 .opp_oversikt_wrapper {
     display: flex;
