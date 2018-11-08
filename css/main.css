@@ -2,6 +2,7 @@ html {
     background: #282828;
     /*Temp font*/
     font-family:'Raleway', sans-serif;
+    height: 100%;
 
 }
 
@@ -9,7 +10,7 @@ body {
     color: #f0f0f0;
     margin: 0;
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100%;
     position: relative;
 }
 
@@ -194,23 +195,29 @@ content {
 
 #putfooterhere {
     background-color: #1C1C1C;
-    height: 120px;
+    height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: -250px;
+    position:absolute;
+    bottom: -200px;
     display: block;
 }
 
 #facebook {
     position: absolute;
     left: 20px;
-    top: 50px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #instagram {
     position: absolute;
     left: 60px;
-    top: 50px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #footer1 {
@@ -220,8 +227,12 @@ content {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 30px;
     width: 150px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 
