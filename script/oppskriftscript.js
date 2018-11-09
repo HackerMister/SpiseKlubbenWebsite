@@ -34,8 +34,7 @@
 //    element.className = arr1.join(" ");
 //}
 
-let parent = document.getElementsByClassName('opp_oversikt_wrapper');
-let classnName = document.getElementsByClassName
+
 function showOnly(parent, className) {
   className = ' ' + className + ' ';
 
@@ -52,7 +51,7 @@ function showOnly(parent, className) {
   }
 }
 
-showOnly(document.getElementById('masterdiv'), 'cat02');
+showOnly(document.querySelectorAll('opp_oversikt_wrapper'), '.category');
 
 
 // adds 'active' class to the selected category,
