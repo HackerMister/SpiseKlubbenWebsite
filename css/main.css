@@ -30,7 +30,7 @@ body {
   transition: 0.3s;
   position: fixed;          /*på skjermen din hele tiden*/
   z-index: 99;              /*navbaren kommer over alt annet*/
-  background: #191919;
+  background: #282828;
 
 }
 
@@ -137,6 +137,7 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 
 .abilde {     /*fjerne all styling på logolinken*/
   all:initial;
+  float: left;
 
 }
 
