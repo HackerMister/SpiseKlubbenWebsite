@@ -1,5 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 
+<<<<<<< HEAD
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = ".1em 0";
@@ -14,3 +15,14 @@ function scrollFunction() {
   //  document.getElementById("logo").height = "75"
   }
 }
+=======
+    var link = document.querySelector('link[rel="import"]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+
+    document.querySelector('#putfooterhere').appendChild(clone);
+
+// code from https://www.html5rocks.com/en/tutorials/webcomponents/imports/
+>>>>>>> f62af04900f5e42b82a47ef183ba3e93d59ca332
