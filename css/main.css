@@ -502,6 +502,10 @@ content {
 
 }
 
+#categories {
+    margin-top: 500px;
+}
+
 .category div {
     width: 236px;
     height: 366px;

@@ -34,25 +34,24 @@
 //    element.className = arr1.join(" ");
 //}
 
-let parent = document.getElementsByClassName('opp_oversikt_wrapper');
-let classnName = document.getElementsByClassName
-function showOnly(parent, className) {
-  className = ' ' + className + ' ';
 
-  var e = parent.firstChild;
-  while (e != null) {
-    if (e.nodeType == 1) {
-      if ((' ' + e.className + ' ').indexOf(className) > -1)
-        e.style.display = 'block';
-      else
-        e.style.display = 'none';
-    }
-
-    e = e.nextSibling;
-  }
-}
-
-showOnly(document.getElementById('masterdiv'), 'cat02');
+//function showOnly(parent, className) {
+//  className = ' ' + className + ' ';
+//
+//  var e = parent.firstChild;
+//  while (e != null) {
+//    if (e.nodeType == 1) {
+//      if ((' ' + e.className + ' ').indexOf(className) > -1)
+//        e.style.display = 'block';
+//      else
+//        e.style.display = 'none';
+//    }
+//
+//    e = e.nextSibling;
+//  }
+//}
+//
+//showOnly(document.querySelectorAll('.opp_oversikt_wrapper'), '.category');
 
 
 // adds 'active' class to the selected category,
