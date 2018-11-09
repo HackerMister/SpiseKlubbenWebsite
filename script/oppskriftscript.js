@@ -57,8 +57,7 @@
 
 // adds 'active' class to the selected category,
 
-let buttons = document.querySelectorAll('.category_selector');
-console.log(buttons);
+
 
 //for (button of buttons) {
 //    button.addEventListener('click', function() {
@@ -72,14 +71,19 @@ console.log(buttons);
 
 //forsøg på filtrering
 
+let buttons = document.querySelectorAll('.ctg_selector');
+console.log(buttons);
+
 let categories = document.querySelectorAll('.category');
 console.log(categories);
 
 for (button of buttons) {
 button.addEventListener('click', makeActive);
-button.addEventListener('click', anotherFunc)
+//button.addEventListener('click', anotherFunc);
 }
 
+
+// adds 'active' class to the selected category,
 function makeActive() {
         for (button of buttons) {
             button.classList.remove("active");
@@ -89,5 +93,12 @@ function makeActive() {
 }
 
 function anotherFunc() {
-    console.log("kukkuk")
+    let cat = this.className
+    for (category of categories){
+        cClass = category.classList;
+        if (cClass.contains(cat)) console.log("detvirker");
+        console.log(categories)
+    }
+    console.log(cat)
+        
 }
