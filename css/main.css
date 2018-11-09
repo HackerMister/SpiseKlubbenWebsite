@@ -1,4 +1,8 @@
-html {
+* {
+  box-sizing: border-box;  /*ALLE*/
+}
+
+  html {
     background: #282828;
     /*Temp font*/
     font-family:'Raleway', sans-serif;
@@ -14,33 +18,116 @@ body {
     position: relative;
 }
 
-#navbar ul {
-    list-style-type: none;
-    float: right;
-    overflow: hidden;
+#navbar {             /* lager en sticky navbar som følger etter på toppen når du scroller nedover*/
+  overflow: hidden;
+  padding: 2.5em 0;
+  width:100%;
+  top:0;                    /*helt inntil toppen*/
+  transition: 0.3s;
+  position: fixed;          /*på skjermen din hele tiden*/
+  z-index: 99;              /*navbaren kommer over alt annet*/
+  background: #191919;
+
 }
 
-#navbar li, #categories li, a {
-    float: left;
+#navbar-right{
+  padding-top: 1em;
+  padding: 0 2em
+}
+
+#logo {
+  vertical-align: middle;
+  position: absolute;
+  transition: 0.4s
+
+}
+
+#navbar-right ul {
+    list-style-type: none;
+  /*float: right;*/
+    overflow: hidden;           /*hvis det kommer noe mer som går utenfor så kuttes det*/
+    clear: right;
+    text-align: right;
+
+}
+
+#navbar-right li,
+a {
+    display: inline-block;
+    padding: 8px;
+/*    float: left;*/
     text-decoration: none;
     color: #f0f0f0;
-    padding: 8px 10px;
-    font-size: 14pt;
+/*    padding: 8px 10px;*/
+    font-size: 13.5pt;
 }
 
-#navbar a.active, #categories li.active {
+#navbar-right a.active {
     text-decoration: underline;
+    text-underline-position: under;
     text-decoration-color: #c39c70;
 }
 
-#navbar li a:hover:not(.active), #categories li:hover:not(.active) {
+#navbar-right li a:hover:not(.active) {
     text-decoration: underline;
+    text-underline-position: under;
     text-decoration-color: #c39c70;
 }
 
 a:hover:not(.active), .eventText h2:hover, .category p:hover {
     text-decoration: underline;
+    text-underline-position: under;
     text-decoration-color: #c39c70;
+}
+
+label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye navbaren*/
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 60px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {             /*gjemmer checkboxen vår som vi har sammenkoblet med labelen siden de har samme ID. Trykker man på labelen trykker man altså på checkboxen*/
+  display: none;
+}
+
+@media only screen and (max-width: 1020px){  /*gjelder for vindu som er under 1020px som er da teksten treffer logoen*/
+  label[for=toggle] { /*labelen vi har laget som er de 3 barene som skal vises og bli tilgitt en pointeregenskap*/
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  label[for=toggle]:hover{  /*hover på selve baren*/
+    color: #c39c70;
+  }
+
+  #logo{            /*gjør logoen til samme størrelse som javascripten gjør når man scroller nedover*/
+    width: 200px;
+    padding-top: .2em; /*fikser på paddingen en smule for at den skal være på linje*/
+  }
+
+  #navbar-right {
+/*    display: none;*/
+  }
+    #navbar-right ul {  /*lar denne forsvinne slik at vi får en ny og ryddig navbar*/
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin:0;
+    display: none;
+  }
+
+
+  #navbar-right li, a{ /*for å få elementene under hverandre*/
+    display: block;
+  }
+
+  #toggle:checked + #navbar-right ul { /*viser lista vår som vi gjemte når det trykkes*/
+    display: block;
+  }
 }
 
 
@@ -50,7 +137,7 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
     justify-content: center;
     height: 80%;
     width: 80%;
-    
+
     margin: auto;
     padding: 15px;
 }
@@ -58,10 +145,10 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
 
 #hostEvent {
 
-    
+
 }
 
-#joinEvent { 
+#joinEvent {
     border-left: solid;
     border-left-color: #c39c70;
     border-left-width: 1px;
@@ -78,7 +165,7 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
 }
 
 .eventText {
-    
+
 }
 
 /* CSS til event form */
@@ -107,7 +194,7 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
     top: 40%;
     left: 35%;
     transform: translate(-50%, -50%);
-    
+
 }
 
 #joinDinnerForm {
@@ -132,13 +219,13 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
 
 
 .formContainer {
-    
+
     max-width: 350px;
     padding: 10px;
     background-color: #282828;
 }
 
-.formContainer input[type=text], 
+.formContainer input[type=text],
 .formContainer input[type=email],
 .formContainer input[type=datetime-local],
 .formContainer input[type=date]  {
@@ -149,7 +236,7 @@ a:hover:not(.active), .eventText h2:hover, .category p:hover {
     background: #f1f1f1;
 }
 
-.formContainer input[type=text]:focus, 
+.formContainer input[type=text]:focus,
 .formContainer input[type=email]:focus,
 .formContainer input[type=datetime-local]:focus
 .formContainer input[type=date]:focus{
@@ -249,7 +336,7 @@ content {
 
 }
 
-/*CSS til galleri*/ 
+/*CSS til galleri*/
 
 #galleryWrapper {
     text-align: center;
@@ -272,7 +359,7 @@ content {
     left: 0;
 }
 
-/*CSS til popup*/ 
+/*CSS til popup*/
 
 #hostDinnerForm, #joinDinnerForm {
     width: 300px;
@@ -291,7 +378,7 @@ content {
     margin-right: auto;
     top: 200px;
 
-    
+
 }
 
 .oppskrift_title h1 {
@@ -357,7 +444,7 @@ content {
     padding-bottom: 0.7em;
 }
 
-.ukasrett_fremgangsmåte p:first-of-type {   
+.ukasrett_fremgangsmåte p:first-of-type {
     margin-top: 7px;
     margin-bottom: 28px;
 }
@@ -366,18 +453,18 @@ content {
 /*UKASRETT & OPPSKRIFT media queries til skermer under 500 px*/
 
 @media screen and (max-width: 500px){
-       
+
     .oppskrift_wrapper, .ukasrett_wrapper {
     width: 90vw;
     top: 180px;
     margin: auto;
     }
-    
+
     .ukasrett_title img, .oppskrift_bilde img {
         width: 100%;
         max-width: 500px;
     }
-    
+
     .ukasrett_fremgangsmåte, .oppskrift_fremgangsmåte  {
         position: static;
         width: 100%;
@@ -390,15 +477,15 @@ content {
     list-style-type: none;
     overflow: hidden;
     font-size: 1.2em
-    
+
 }
 /*resten af #categories li styling ligger under navbar stylingen*/
 
 .opp_oversikt_wrapper {
     display: flex;
     flex-wrap: wrap;
-    
-    
+
+
 }
 
 .category div {
@@ -434,7 +521,7 @@ content {
 /*
 .show {
     display: block;
-    
+
 }
 */
 
@@ -450,7 +537,7 @@ content {
     content: "";
     clear: both;
     display: table;
-    
+
 }
 
 
@@ -467,6 +554,37 @@ content {
     margin-top: 100px
 }
 
+/* FORSIDE CSS */
+
+.container {
+  position: relative;
+  margin-top:130px;           /*får rett under navbaren*/
+}
+
+.bb{
+  height: 75vh;
+  background: url("../img/hjem/biffen2.jpg") center;    /*slik at coverbildet har en fixed og */
+  background-size: cover;
+}
+
+.bb-content {
+  position: absolute;
+  left: 50%; /*sentrerer sammen med #boks left: -50%*/
+  top:85%;
+}
+#boks {
+  position:relative;     /*knapp til påmeldingssiden*/
+  left: -50%;
+  padding: 0.5em 1em;
+  border: 1px solid #f0f0f0;
+  transition: 0.3s;
+}
+
+#boks:hover {      /* når musa er over boksen*/
+  cursor: pointer;
+  color: black;
+  background: #f0f0f0;
+}
 
 .tip-pic {
     width: 40%;
@@ -476,5 +594,5 @@ content {
 .tip-text {
     width: 40%;
     float: right;
-    
+
 }
