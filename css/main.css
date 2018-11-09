@@ -452,3 +452,23 @@ content {
 .oppskriftbilde {
     width: 20vw;
 }
+
+/*TIPS OG TRIKS content sider css*/
+
+.tip-cont{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px
+}
+
+
+.tip-pic {
+    width: 40%;
+    float: left;
+}
+
+.tip-text {
+    width: 40%;
+    float: right;
+    
+}
