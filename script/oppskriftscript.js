@@ -54,17 +54,40 @@
 //showOnly(document.querySelectorAll('.opp_oversikt_wrapper'), '.category');
 
 
+
 // adds 'active' class to the selected category,
 
 let buttons = document.querySelectorAll('.category_selector');
 console.log(buttons);
 
+//for (button of buttons) {
+//    button.addEventListener('click', function() {
+//        for (button of buttons) {
+//            button.classList.remove("active");
+//            
+//        }
+//        this.classList.add('active');
+//})
+//}
+
+//forsøg på filtrering
+
+let categories = document.querySelectorAll('.category');
+console.log(categories);
+
 for (button of buttons) {
-    button.addEventListener('click', function() {
+button.addEventListener('click', makeActive);
+button.addEventListener('click', anotherFunc)
+}
+
+function makeActive() {
         for (button of buttons) {
             button.classList.remove("active");
             
         }
-        this.classList.add('active');
-})
+        this.classList.add('active'); 
+}
+
+function anotherFunc() {
+    console.log("kukkuk")
 }
