@@ -17,6 +17,10 @@ body {
     min-height: 100%;
     position: relative;
 }
+.container {
+  position: relative;
+  margin-top:160px;           /*får rett det under navbaren*/
+}
 
 #navbar {             /* lager en sticky navbar som følger etter på toppen når du scroller nedover*/
   overflow: hidden;
@@ -38,7 +42,7 @@ body {
 #logo {
   vertical-align: middle;
   position: absolute;
-  transition: 0.4s
+  transition: 0.4s;
 
 }
 
@@ -127,7 +131,17 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 
   #toggle:checked + #navbar-right ul { /*viser lista vår som vi gjemte når det trykkes*/
     display: block;
+
   }
+}
+
+.abilde {     /*fjerne all styling på logolinken*/
+  all:initial;
+
+}
+
+.abilde:hover {
+  cursor:pointer;
 }
 
 
@@ -555,14 +569,8 @@ content {
 }
 
 /* FORSIDE CSS */
-
-.container {
-  position: relative;
-  margin-top:130px;           /*får rett under navbaren*/
-}
-
 .bb{
-  height: 75vh;
+  height: 70vh;
   background: url("../img/hjem/biffen2.jpg") center;    /*slik at coverbildet har en fixed og */
   background-size: cover;
 }

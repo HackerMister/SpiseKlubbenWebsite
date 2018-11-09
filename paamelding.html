@@ -16,7 +16,10 @@
 
 <body>
     <div id="navbar">
-        <img src="img/spiseklubben bare navn uten logo.png" alt="spisehval" width="200px">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id ="toggle">
+      <div id="navbar-right">
+        <a href="hjem.html" class ="abilde"> <img id ="logo" src="img/spiseklubben bare navn uten logo.png" alt="spisehval" width="300px"></a>
         <ul>
             <li><a href="paamelding.html" class="active">Påmelding</a></li>
             <li><a href="Oppskrifter.html">Oppskrifter</a> </li>
@@ -26,7 +29,9 @@
             <li><a href="Kontakt.html">Kontakt</a></li>
         </ul>
     </div>
+  </div>
 
+<div class="container">
     <div class="eventContainer">
         <div id="hostEvent">
             <div class="eventText">
@@ -81,6 +86,7 @@
             <button type="button" class="btn cancel" onclick="closeJoinForm()">Cancel</button>
         </form>
     </div>
+  </div>
 
     <script>
         function openHostForm() {
@@ -102,7 +108,7 @@
 
     <div id="putfooterhere">
     </div>
-    
+
     <script src="script/javascript.js"></script>
 </body>
 
