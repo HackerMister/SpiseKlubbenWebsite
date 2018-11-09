@@ -66,7 +66,7 @@ a {
     font-size: 13.5pt;
 }
 
-#navbar-right a.active {
+#navbar-right a.active, #categories li.active, .categories a, .category p:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
@@ -78,7 +78,7 @@ a {
     text-decoration-color: #c39c70;
 }
 
-a:hover:not(.active), .eventText h2:hover, .category p:hover {
+a:hover:not(.active), .eventText h2:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
@@ -490,6 +490,7 @@ content {
 
 #categories li {
     list-style-type: none;
+    display: inline-block;
     overflow: hidden;
     font-size: 1.2em
 
@@ -501,10 +502,6 @@ content {
     flex-wrap: wrap;
 
 
-}
-
-#categories {
-    margin-top: 500px;
 }
 
 .category div {
