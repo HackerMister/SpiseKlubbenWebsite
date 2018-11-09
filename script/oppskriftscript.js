@@ -79,7 +79,7 @@ console.log(categories);
 
 for (button of buttons) {
 button.addEventListener('click', makeActive);
-button.addEventListener('click', anotherFunc);
+//button.addEventListener('click', anotherFunc);
 }
 
 
@@ -93,12 +93,12 @@ function makeActive() {
 }
 
 function anotherFunc() {
-    let cat = this.innerHTML
+    let cat = this.className
     for (category of categories){
         cClass = category.classList;
         if (cClass.contains(cat)) console.log("detvirker");
         console.log(categories)
     }
-   // console.log(cat)
+    console.log(cat)
         
 }
