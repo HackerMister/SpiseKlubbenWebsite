@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     position: relative;
 }
-.container {
+.container {                   /*ikke endre. Heller slette den fra htmlkoden*/
   position: relative;
   margin-top:160px;           /*får rett det under navbaren*/
 }
@@ -598,6 +598,85 @@ content {
   color: black;
   background: #f0f0f0;
 }
+
+.forside_innhold {
+  padding: 0 2em;
+  overflow: hidden;
+}
+
+#tittel_h{
+  float: right;
+  width:575px;
+  font-size: 28pt;
+  margin-bottom: 0;
+}
+
+#brødtekst_h {
+  padding-top: 150px;
+  width: 465px;
+  float: left;
+  font-size: 20pt;
+}
+.bilde1{
+  background: red;
+  width: 575px;
+  height: 550px;
+  float: right;
+  clear: right;
+  margin-top: -30px;
+  background: url("../img/hjem/1.jpg") center;
+  background-size: cover;
+}
+.bilde2{
+  background: blue;
+  width:315px;
+  height: 480px;
+  float: left;
+  clear:left;
+  margin-left: 90px;
+  margin-top: 20px;
+  background: url("../img/hjem/2.jpg") center;
+  background-size: cover;
+
+
+}
+.bilde3{
+  background: yellow;
+  width: 430px;
+  height: 545px;
+  float: left;
+  clear: left;
+  margin-left: 405px;
+/*  margin-right: calc(145px + 368px);*/
+  margin-top: 75px;
+  background: url("../img/hjem/3.jpg") center;
+  background-size: cover;
+}
+.bilde4{
+  background: hotpink;
+  width: 325px;
+  height: 460px;
+  float:left;
+  clear:left;
+  margin-top: -335px;
+  background: url("../img/hjem/4.jpg") center;
+  background-size: cover;
+}
+.bilde5{
+  background: orange;
+  height: 465px;
+  width: 755px;
+  float: left;
+  clear: left;
+  margin-left: 325px;
+  margin-top: 75px;
+  background: url("../img/hjem/5.jpg") center;
+  background-size: cover;
+}
+
+/*-------------------------------------------------------------*/
+
+
 
 .tip-pic {
     width: 40%;
