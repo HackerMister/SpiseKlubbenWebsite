@@ -35,23 +35,23 @@
 //}
 
 
-function showOnly(parent, className) {
-  className = ' ' + className + ' ';
-
-  var e = parent.firstChild;
-  while (e != null) {
-    if (e.nodeType == 1) {
-      if ((' ' + e.className + ' ').indexOf(className) > -1)
-        e.style.display = 'block';
-      else
-        e.style.display = 'none';
-    }
-
-    e = e.nextSibling;
-  }
-}
-
-showOnly(document.querySelectorAll('.opp_oversikt_wrapper'), '.category');
+//function showOnly(parent, className) {
+//  className = ' ' + className + ' ';
+//
+//  var e = parent.firstChild;
+//  while (e != null) {
+//    if (e.nodeType == 1) {
+//      if ((' ' + e.className + ' ').indexOf(className) > -1)
+//        e.style.display = 'block';
+//      else
+//        e.style.display = 'none';
+//    }
+//
+//    e = e.nextSibling;
+//  }
+//}
+//
+//showOnly(document.querySelectorAll('.opp_oversikt_wrapper'), '.category');
 
 
 // adds 'active' class to the selected category,
