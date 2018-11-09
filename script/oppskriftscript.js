@@ -51,7 +51,7 @@ function showOnly(parent, className) {
   }
 }
 
-showOnly(document.querySelectorAll('opp_oversikt_wrapper'), '.category');
+showOnly(document.querySelectorAll('.opp_oversikt_wrapper'), '.category');
 
 
 // adds 'active' class to the selected category,
