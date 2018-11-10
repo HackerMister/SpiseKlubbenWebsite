@@ -362,7 +362,7 @@ content {
     width: 90px;
 }
 
-/* når skjermen blir mindre enn 850px */
+/* når skjermen blir mindre enn 600px */
 
 @media only screen and (max-width: 600px) {
     
@@ -385,6 +385,7 @@ content {
     z-index: 10;
     position: relative;
     clear: both;
+    margin-top: 100px;
 }
 
 #facebook {
@@ -579,13 +580,9 @@ content {
 
 /*resten af #categories li styling ligger under navbar stylingen*/
 
-.opp_oversikt_wrapper {
-    display: flex;
-    flex-wrap: wrap;
 
 
-}
-
+/*
 .category div {
     width: 236px;
     height: 366px;
@@ -607,25 +604,10 @@ content {
 .category p {
     font-size: 1em,
 }
-
-/* dette hænger sammen med javascripten*/
-/*
-.category {
-    display: none;
-}
-*/
-
-/*dette hænger også sammen med javascripten*/
-/*
-.show {
-    display: block;
-
-}
 */
 
 
-
-/*TIPS OG TRIKS CSS with thanks to https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+/*TIPS OG TRIKS CSS */
 
 .row div {
     float: left;
@@ -646,8 +628,6 @@ content {
 
 .row {
     margin-left: calc((100vw - 1320px)/2 - 20px);
-    height: 100%;
-    
 }
 
 @media screen and (max-width: 1360px) {
@@ -667,6 +647,10 @@ content {
         margin-left: calc((100vw - 300px)/2 - 20px);
     }
 }
+
+
+/*centrerer tipsa når der er 4, 3, 2 eller 1 bilde på rad*/
+
 
 /*TIPS OG TRIKS content sider css*/
 
