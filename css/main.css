@@ -624,26 +624,45 @@ content {
 
 
 /*TIPS OG TRIKS CSS with thanks to https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
-/*
 
-.column {
+.row div {
     float: left;
-    width: 25%;
+    box-sizing: border-box;
+    height: 420px;
+    width: 300px;
+    margin: 20px 20px 15px 20px
+    
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-
+.row div a, .row div img {
+    width: 100%;
 }
 
-
-
-.oppskriftbilde {
-    width: 20vw;
+.category{
+    display: none;
 }
-*/
+
+.row {
+    margin-left: calc((100vw - 1320px)/2 - 20px);
+}
+
+@media screen and (max-width: 1360px) {
+    .row {
+        margin-left: calc((100vw - 980px)/2 - 20px);
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row {
+        margin-left: calc((100vw - 640px)/2 - 20px);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .row {
+        margin-left: calc((100vw - 300px)/2 - 20px);
+    }
+}
 
 /*TIPS OG TRIKS content sider css*/
 
