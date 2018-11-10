@@ -79,7 +79,7 @@ console.log(categories);
 
 for (button of buttons) {
 button.addEventListener('click', makeActive);
-//button.addEventListener('click', anotherFunc);
+button.addEventListener('click', anotherFunc);
 }
 
 
@@ -93,12 +93,18 @@ function makeActive() {
 }
 
 function anotherFunc() {
-    let cat = this.className
+    let cat = this.innerHTML
     for (category of categories){
-        cClass = category.classList;
-        if (cClass.contains(cat)) console.log("detvirker");
-        console.log(categories)
+        cClass = category.className;
+        if (cClass.indexOf(cat) > -1) {
+            console.log("der er gevinst");
+        }
+        else {
+            console.log("ingen gevinst")
+        }
+        //console.log(cClass)
+        //console.log(cClass.split(" "))
     }
-    console.log(cat)
+    //console.log(cat)
         
 }
