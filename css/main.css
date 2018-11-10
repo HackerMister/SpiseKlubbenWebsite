@@ -8,6 +8,7 @@ html {
     /*Temp font*/
     font-family: 'Raleway', sans-serif;
     height: 100%;
+    min-height: 100vh;
 
 }
 
@@ -439,6 +440,7 @@ content {
 #galleryWrapper {
     text-align: center;
     margin-top: 60px;
+    min-height: 100vh;
 }
 
 .galleryContainer {
