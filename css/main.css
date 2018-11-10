@@ -5,7 +5,7 @@
   html {
     background: #282828;
     /*Temp font*/
-    font-family:'Raleway', sans-serif;
+   font-family:'Raleway', sans-serif;
     height: 100%;
 
 }
@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     position: relative;
 }
-.container {                   /*ikke endre. Heller slette den fra htmlkoden*/
+.container {                   /*er en default en som får den alt under navbaren*/
   position: relative;
   margin-top:160px;           /*får rett det under navbaren*/
 }
@@ -64,6 +64,7 @@ a {
     color: #f0f0f0;
 /*    padding: 8px 10px;*/
     font-size: 13.5pt;
+  /*  font-family: "Akkurat Light"*/
 }
 
 #navbar-right a.active, #categories li.active, .categories a, .category p:hover {
@@ -592,9 +593,20 @@ content {
   background: #f0f0f0;
 }
 
+#aboks {
+  all:initial;
+  color: #f0f0f0;
+  font-family:'Raleway', sans-serif;
+}
+
 .forside_innhold {
   padding: 0 2em;
-  overflow: hidden;
+  overflow: auto;
+}
+
+.container_hjem {
+  position: relative;
+  margin-top:160px;
 }
 
 #tittel_h{
@@ -605,66 +617,174 @@ content {
 }
 
 #brødtekst_h {
-  padding-top: 150px;
-  width: 465px;
+  padding-top: 190px;
+  width: 500px;
   float: left;
-  font-size: 20pt;
+  font-size: 24pt;
+
 }
-.bilde1{
-  background: red;
-  width: 575px;
+.bilde1{ /*siden CSS-Grid eller lignende måter å sette opp et gridsystem ikke er lov så kjører vi en manuell versjon ved kun hjelp av float og margin attributtr*/
+  width: 575px;   /* bestemmer bredden som vi lagde fra mockupsene*/
   height: 550px;
   float: right;
   clear: right;
-  margin-top: -30px;
-  background: url("../img/hjem/1.jpg") center;
-  background-size: cover;
+  margin-top: -20px; /*plasserer de slik de ser ut på mockupsene*/
+  background: url("../img/hjem/1.jpg") center; /*setter hele bildet i en div*/
+  background-size: cover; /*skalerer bildet så stort som mulig uten å stretche bildet*/
+}
+.tekst1{ /*lager også en manuell tekstboks for hver bildediv for å gjøre det enklere og ryddig*/
+  width: 575px;
+  height: 50px;
+  float: right;
+  clear: right;
+  padding-right: 61px;
 }
 .bilde2{
-  background: blue;
   width:315px;
   height: 480px;
   float: left;
   clear:left;
-  margin-left: 90px;
-  margin-top: 20px;
+  margin-left: 150px;
+  margin-top:-250px;;
   background: url("../img/hjem/2.jpg") center;
   background-size: cover;
-
-
+}
+.tekst2{
+  width: 315px;
+  height: 50px;
+  float: left;
+  clear: left;
+  margin-left: 150px;
+  padding-right: 50px;
 }
 .bilde3{
-  background: yellow;
   width: 430px;
   height: 545px;
   float: left;
   clear: left;
-  margin-left: 405px;
-/*  margin-right: calc(145px + 368px);*/
-  margin-top: 75px;
+  margin-left: 465px;
+  margin-top: 25px;
   background: url("../img/hjem/3.jpg") center;
   background-size: cover;
 }
+
+.tekst3{
+  width: 430px;
+  height: 50px;
+  float: left;
+  clear: left;
+  margin-left: 465px;
+  padding-right: 120px;
+}
+
+
 .bilde4{
-  background: hotpink;
   width: 325px;
   height: 460px;
   float:left;
   clear:left;
-  margin-top: -335px;
+  margin-top: -385px;
   background: url("../img/hjem/4.jpg") center;
   background-size: cover;
 }
+
+.tekst4{
+  width: 325px;
+  height: 50px;
+  float: left;
+  clear: left;
+  padding-right: 89px;
+}
+
 .bilde5{
-  background: orange;
   height: 465px;
   width: 755px;
   float: left;
   clear: left;
   margin-left: 325px;
-  margin-top: 75px;
+  margin-top: 30px;
   background: url("../img/hjem/5.jpg") center;
   background-size: cover;
+}
+
+.tekst5{
+  width: 755px;
+  height: 50px;
+  float: left;
+  clear: left;
+  margin-left: 325px;
+}
+
+
+.ahjem {
+  all:initial;
+  color: #f0f0f0;
+  font-size: 13pt;
+  font-family:'Raleway', sans-serif;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.ahjem:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1136px){ /*for å gjøre den responsiv så deler vi den opp i to deler --> 1.DEL*/
+
+
+#tittel_h, #brødtekst_h, .bilde1, .bilde2, .bilde3, .bilde4, .bilde5, .tekst1, .tekst2, .tekst3, .tekst4, .tekst5 {
+  float: none;
+  margin-top:0;
+  margin-bottom:30px;
+  padding-top:0;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  padding-right: 0;
+}
+  .forside_innhold {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media only screen and (max-width: 785px){ /*2. DEL*/
+
+  .bilde1, .bilde2, .bilde3, .bilde4,.bilde5, .tekst1, .tekst2, .tekst3, .tekst4, .tekst5{
+    width: 90%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 8pt;
+  }
+  .ahjem {
+    font-size: 8pt;
+  }
+
+  .bilde5{
+    height: 200px;
+  }
+  .bilde1, .bilde2{
+    height: 400px;
+  }
+  .bilde3 {
+    height: 300px;
+  }
+  .bilde4{
+    height: 350px;
+  }
+  #tittel_h{
+    font-size: 15pt;
+    width: 90%;
+  }
+  #brødtekst_h {
+    font-size: 10pt;
+    width: 90%;
+
+  }
+
 }
 
 /*-------------------------------------------------------------*/
