@@ -103,6 +103,8 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
     display: block;
     cursor: pointer;
     transition: .3s;
+    margin-top: 10px;
+    padding-bottom:10px;
   }
 
   label[for=toggle]:hover{  /*hover på selve baren*/
@@ -111,7 +113,7 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 
   #logo{            /*gjør logoen til samme størrelse som javascripten gjør når man scroller nedover*/
     width: 200px;
-    padding-top: .2em; /*fikser på paddingen en smule for at den skal være på linje*/
+    padding-top: .9em; /*fikser på paddingen en smule for at den skal være på linje*/
   }
 
   #navbar-right {
@@ -123,6 +125,7 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
     width: 100%;
     margin:0;
     display: none;
+    padding-left: 0;
   }
 
 
