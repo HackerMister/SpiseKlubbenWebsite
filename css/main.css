@@ -82,7 +82,8 @@ a {
 
 #navbar-right a.active,
 #categories li.active,
-.categories a,
+#categories li:hover,
+.category a:hover,
 .category p:hover {
     text-decoration: underline;
     text-underline-position: under;
@@ -626,9 +627,12 @@ content {
     width: 100%;
 }
 
+/*
 .category{
     display: none;
+
 }
+*/
 
 .row {
     margin-left: calc((100vw - 1320px)/2 - 20px);
