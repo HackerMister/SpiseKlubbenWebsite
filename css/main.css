@@ -150,17 +150,19 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 }
 
 
+
 .eventContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80%;
     width: 80%;
-
     margin: auto;
     padding: 15px;
     padding-top: 100px;
 }
+
+
 
 
 #joinEvent {
@@ -172,7 +174,7 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 
 #hostEvent,
 #joinEvent {
-    width: 50%;
+    width: 100%;
     min-height: 500px;
     text-align: center;
     display: inline-block;
@@ -188,6 +190,8 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 * { /* If not enabled, text forms span outside element*/
     box-sizing: border-box;
 }
+
+
 
 .open-button {
     cursor: pointer;
@@ -220,6 +224,14 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 
 }
 
+/*CSS til popup*/
+
+#hostDinnerForm, #joinDinnerForm {
+    width: 300px;
+    position: absolute;
+    
+}
+
 .form-popup {
     display: none;
     position: absolute;
@@ -230,6 +242,8 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 
 
@@ -273,6 +287,25 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 .formContainer .cancel {
     background-color: rgb(211, 68, 68);
   }
+  /* Legger denne under CSS-en den påvirker pga av "specificity"*/
+  @media only screen and (max-width: 800px) {
+    [class*="eventContainer"] {
+        display: block;
+    }
+    [id*="joinEvent"] {
+        border-left: none !important;
+    }
+    [id*="joinDinnerForm"]{
+        top: 50% !important;
+        left: 50% !important;
+        
+    }
+    [id*="hostDinnerForm"]{
+        top: 50% !important;
+        left: 50% !important;
+        
+    }
+}
 
 /* css til Kontakt.html */
 
@@ -374,13 +407,7 @@ content {
     left: 0;
 }
 
-/*CSS til popup*/
 
-#hostDinnerForm, #joinDinnerForm {
-    width: 300px;
-    position: absolute;
-    
-}
 
 /* css til oppskrifter (ikke oversigten)*/
 
