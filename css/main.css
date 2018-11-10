@@ -652,6 +652,7 @@ content {
 @media screen and (max-width: 700px) {
 
     .tip-cont {
+        
         margin-left: 0;
         margin-right: 0;
         margin-top: 200px;
@@ -659,7 +660,7 @@ content {
     }
 
     .tip-pic {
-        position: relative;
+      
         margin-left: 20%;
         margin-right: 20%;
         min-width: 60vw;
@@ -668,9 +669,10 @@ content {
     }
 
     .tip-text {
-        position: relative;
+     
         margin-left: 20%;
         margin-right: 20%;
+        padding-left: 10px;
         min-width: 60vw;
        
 
