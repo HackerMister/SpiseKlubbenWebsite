@@ -458,13 +458,13 @@ content {
 
 .oppskrift_wrapper,
 .ukasrett_wrapper {
-    position: absolute;
+    position: relative;
     width: 950px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 200px;
+    top: 40px;
 
 
 }
