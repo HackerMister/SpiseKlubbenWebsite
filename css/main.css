@@ -744,9 +744,11 @@ content {
   margin-left:auto;
   margin-right: auto;
   padding-right: 0;
+  padding-left:0;
+  width:80%;
 }
   .forside_innhold {
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 
@@ -757,7 +759,7 @@ content {
   .bilde1, .bilde2, .bilde3, .bilde4,.bilde5, .tekst1, .tekst2, .tekst3, .tekst4, .tekst5{
     width: 90%;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
     padding-right: 0;
     padding-left: 0;
     font-size: 8pt;
