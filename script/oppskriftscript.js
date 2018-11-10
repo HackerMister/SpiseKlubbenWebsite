@@ -93,17 +93,20 @@ function makeActive() {
 }
 
 function anotherFunc() {
-    let cat = this.innerHTML
+    let cat = this.className;
     for (category of categories){
         cClass = category.className;
+        //console.log(cClass);
         if (cClass.indexOf(cat) > -1) {
+            category.style.display = 'block';
             console.log("der er gevinst");
         }
         else {
+            category.style.display = 'none';
             console.log("ingen gevinst")
         }
         //console.log(cClass)
-        //console.log(cClass.split(" "))
+        console.log(cat)
     }
     //console.log(cat)
         
