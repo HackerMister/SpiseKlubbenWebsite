@@ -79,7 +79,7 @@ console.log(categories);
 
 for (button of buttons) {
 button.addEventListener('click', makeActive);
-button.addEventListener('click', anotherFunc);
+button.addEventListener('click', showCategory);
 }
 
 
@@ -92,22 +92,24 @@ function makeActive() {
         this.classList.add('active'); 
 }
 
-function anotherFunc() {
-    let cat = this.className;
+function showCategory() {
+    let cat = this.title;
     for (category of categories){
         cClass = category.className;
-        //console.log(cClass);
-        if (cClass.indexOf(cat) > -1) {
+        
+        if ("alle".indexOf(cat) == 0) {
             category.style.display = 'block';
-            console.log("der er gevinst");
+        }
+        else if (cClass.indexOf(cat) > -1) {
+            category.style.display = 'block';
+            //console.log(cat);
         }
         else {
             category.style.display = 'none';
-            console.log("ingen gevinst")
         }
-        //console.log(cClass)
-        console.log(cat)
+        
+        //console.log(cat)
     }
-    //console.log(cat)
+    
         
 }
