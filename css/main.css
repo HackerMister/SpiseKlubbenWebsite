@@ -346,8 +346,11 @@ content {
     position: absolute;
     text-align: left;
     top: 50px;
-    left: 30%;
-    right: 30%;
+    max-width: 450px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -360,13 +363,14 @@ content {
 
 /* når skjermen blir mindre enn 850px */
 
-@media only screen and (max-width: 850px) {
-
-    content {
-        left: 10%;
-        right: 10%;
-
-    }
+@media only screen and (max-width: 600px) {
+    
+content {
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
 
 }
 
