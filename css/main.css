@@ -23,6 +23,7 @@ body {
     /*er en default en som får den alt under navbaren*/
     position: relative;
     margin-top: 160px;
+    height: 100%;
     /*får rett det under navbaren*/
 }
 
@@ -380,9 +381,10 @@ content {
     background-color: #1C1C1C;
     height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: -200px;
     display: block;
+    z-index: 10;
+    position: relative;
+    clear: both;
 }
 
 #facebook {
@@ -644,6 +646,8 @@ content {
 
 .row {
     margin-left: calc((100vw - 1320px)/2 - 20px);
+    height: 100%;
+    
 }
 
 @media screen and (max-width: 1360px) {
