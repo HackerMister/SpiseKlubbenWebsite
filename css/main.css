@@ -24,7 +24,9 @@ body {
     /*er en default en som får den alt under navbaren*/
     position: relative;
     margin-top: 160px;
+    margin-bottom: 50px;
     height: 100%;
+    min-height: 100vh;
     /*får rett det under navbaren*/
 }
 
