@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     position: relative;
 }
-.container {                   /*ikke endre. Heller slette den fra htmlkoden*/
+.container {                   /*er en default en som får den alt under navbaren*/
   position: relative;
   margin-top:160px;           /*får rett det under navbaren*/
 }
@@ -597,9 +597,20 @@ content {
   background: #f0f0f0;
 }
 
+#aboks {
+  all:initial;
+  color: #f0f0f0;
+  font-family:'Raleway', sans-serif;
+}
+
 .forside_innhold {
   padding: 0 2em;
   overflow: auto;
+}
+
+.container_hjem {
+  position: relative;
+  margin-top:160px;
 }
 
 #tittel_h{
