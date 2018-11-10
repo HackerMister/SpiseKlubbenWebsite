@@ -162,11 +162,6 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 }
 
 
-#hostEvent {
-
-
-}
-
 #joinEvent {
     border-left: solid;
     border-left-color: #c39c70;
@@ -178,13 +173,13 @@ label[for=toggle]{      /*fiksing av hvor og hvordan labelen skal stå i den nye
 #joinEvent {
     width: 50%;
     min-height: 500px;
-    float: left;
     text-align: center;
     display: inline-block;
 }
 
-.eventText {
-
+#joinEvent {
+    /*Whale chef hat compensation in height to align whale images*/
+    padding-top: 130px;
 }
 
 /* CSS til event form */
