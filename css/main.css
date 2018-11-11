@@ -362,7 +362,12 @@ content {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 
+}
+
+.kontakt_content{
+  /*text-align: center;*/
 }
 
 #kp3 {
@@ -702,6 +707,12 @@ content {
     font-size: 1em;
 }
 
+.ctg_selector{
+  color: #898988;
+  transition: 0.3s;
+
+}
+
 
 .ctg_selector.active,
 .category a:hover,
@@ -709,6 +720,10 @@ content {
   text-decoration: underline;
   text-decoration-color: #c39c70;
   cursor: pointer;
+}
+
+.ctg_selector:hover{
+  color: #f0f0f0;
 }
 
 .category {
@@ -970,7 +985,7 @@ content {
     float: right;
     clear: left;
     margin-right: 220px;
-    margin-top: 25px;
+    margin-top: 20px;
     background: url("../img/hjem/3.jpg") center;
     background-size: cover;
 }
