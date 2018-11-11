@@ -44,15 +44,15 @@ var clone = document.importNode(template.content, true);
 
 document.querySelector('#navbar').appendChild(clone);
 
-//herfra forsøg på active
+//adds class 'active' til navbar, med stor tak til Bendik Schøder
 
 window.onload = function() { 
-let navItems = document.querySelectorAll('#navbar-right li a');
+let navSelectors = document.querySelectorAll('#navbar-right li a');
   let pageName = window.location.pathname.split('/').pop();
-  for (let item of navItems) {
-    let href = item.href.split('/').pop();
+  for (let navSelector of navSelectors) {
+    let href = navSelector.href.split('/').pop();
     if (href === pageName) {
-      item.classList.add('active');
+      navSelector.classList.add('active');
     }
   }
 }
@@ -105,25 +105,25 @@ function showCategory() {
         else if (cClass.indexOf(cat) > -1) {
             category.style.display = 'block';
         }
-        //hides all other categories thet doesn't matches the selected category
+        //hides all other categories that doesn't matches the selected category
         else {
             category.style.display = 'none';
         }
     }
 }
 
-//hilsen til shivam
+//galleri js
 
 
 let bilder = document.querySelectorAll('.bildeWrapper li')
 
-
-
 for (bilde of bilder) {
-    let galleri = document.querySelectorAll('bildeWrapper')
-    
+    let galleri = document.querySelectorAll('.bildeWrapper');
+    let slideShow = document.getElementById('galleryWrapper');
     bilde.onclick = function() {
-    
+        slideShow.style.display = 'block';
+        galleri.style.display = 'none';
+        console.log(galleri);
 }
 }
 
