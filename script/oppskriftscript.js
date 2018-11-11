@@ -5,6 +5,14 @@ let buttons = document.querySelectorAll('.ctg_selector');
 
 let categories = document.querySelectorAll('.category');
 
+let smallButtons = document.querySelectorAll('.category > p');
+
+for (smallButton of smallButtons) {
+    smallButton.addEventListener('click', makeActive);
+    smallButton.addEventListener('click', showCategory);
+}
+
+
 for (button of buttons) {
 button.addEventListener('click', makeActive);
 button.addEventListener('click', showCategory);
@@ -13,11 +21,17 @@ button.addEventListener('click', showCategory);
 
 //removes 'active' class from all buttons and adds 'active' class to the selected category-button 
 function makeActive() {
+    let c = this.title;
         for (button of buttons) {
             button.classList.remove("active");
-            
+            if (c.indexOf(button.title) > -1) {
+                console.log("findes ikke");
+            }
         }
-        this.classList.add('active'); 
+        this.classList.add('active');
+    
+    //console.log(c);
+    //if (c.indexOf())
 }
 
 //shows the selected category
@@ -37,5 +51,6 @@ function showCategory() {
         else {
             category.style.display = 'none';
         }
-    }      
+    }
+    //console.log(cat)
 }
