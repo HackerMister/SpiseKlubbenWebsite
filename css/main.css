@@ -581,12 +581,17 @@ content {
 
 /* OPPSKRIFT-OVERSIKT css*/
 
+#categories {
+    margin-left: calc(50vw - 230px);
+}
+
+
 #categories li {
     list-style-type: none;
     display: inline-block;
     padding:8px;
     overflow: hidden;
-    font-size: 1.2em
+    font-size: 1em
 }
 
 .ctg_selector:hover,
@@ -599,14 +604,25 @@ content {
   cursor: pointer;
 }
 
-
-.category > p {
-    padding: 8px;
-
+.category {
+    height: 570px !important;
 }
 
 
-/*TIPS OG TRIKS og OPPSKRIFTER CSS */
+.category a p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+
+}
+
+.category > p {
+    font-size: 0.8em;
+    padding: 8px 6px 8px 10px;
+    float: left;
+}
+
+
+/*TIPS OG TRIKS CSS */
 
 .row div {
     float: left;
@@ -617,9 +633,6 @@ content {
 
 }
 
-div.category {
-    height: 550px;
-}
 
 .row div a, .row div img {
     width: 100%;
