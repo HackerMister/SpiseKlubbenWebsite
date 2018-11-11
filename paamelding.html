@@ -77,20 +77,33 @@
   </div>
 
     <script>
+        let isFormOpen = false;
         function openHostForm() {
-            document.getElementById("hostDinnerForm").style.display = "block";
+            if (!isFormOpen) {
+                closeJoinForm();
+                document.getElementById("hostDinnerForm").style.display = "block";
+                isFormOpen = true;
+            } 
+            
         }
 
         function closeHostForm() {
             document.getElementById("hostDinnerForm").style.display = "none";
+            isFormOpen = false;
         }
 
         function openJoinForm() {
-            document.getElementById("joinDinnerForm").style.display = "block";
+            if (!isFormOpen) {
+                closeHostForm()
+                document.getElementById("joinDinnerForm").style.display = "block";
+                isFormOpen = true;        
+            } 
+            
         }
 
         function closeJoinForm() {
             document.getElementById("joinDinnerForm").style.display = "none";
+            isFormOpen = false;
         }
     </script>
 
