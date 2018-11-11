@@ -765,6 +765,10 @@ content {
 }
 
 
+.row p {
+    font-weight: bold;
+}
+
 
 
 /*centrerer tipsa når der er 4, 3, 2 eller 1 bilde på rad*/
