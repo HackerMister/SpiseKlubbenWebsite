@@ -496,7 +496,7 @@ content {
 
 .gal1{
 
-    background: url("../img/gallery/dumplings.jpg") center; 
+    background: url("../img/gallery/dumplings.jpg") center;
     background-size: cover;
     height: 328px;
 
@@ -549,6 +549,7 @@ content {
   height: 357px;
 
 }
+/*
 
 @media screen and (min-width: 540px) {
 .bildeWrapper ul.bildeGrid {
@@ -565,7 +566,7 @@ content {
     columns: 4;
   }
 
-
+*/
 /*
 
 @media only screen and (max-width: 1050px) {
