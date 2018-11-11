@@ -228,7 +228,10 @@ label[for=toggle] {
 
 .open-button {
     cursor: pointer;
+    padding-right: 20px; 
 }
+
+
 
 .form-popup {
     display: none;
@@ -340,6 +343,11 @@ label[for=toggle] {
     [id*="hostDinnerForm"] {
         top: 50% !important;
         left: 50% !important;
+
+    }
+
+    [class*="open-button"] {
+        padding-right: 70px;
 
     }
 }
