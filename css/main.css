@@ -823,7 +823,7 @@ content {
     height: 480px;*/
     float: left;
     clear: left;
-    margin-left: 150px;
+    margin-left: 130px;
     margin-top: -325px;
     ;
     background: url("../img/hjem/2.jpg") center;
@@ -835,7 +835,7 @@ content {
     height: 50px;
     float: left;
     clear: left;
-    margin-left: 150px;
+    margin-left: 130px;
     padding-right: 50px;
 }
 
@@ -847,7 +847,7 @@ content {
     padding-bottom:50%;
     float: right;
     clear: left;
-    margin-right: 200px;
+    margin-right: 220px;
     margin-top: 25px;
     background: url("../img/hjem/3.jpg") center;
     background-size: cover;
@@ -858,7 +858,7 @@ content {
     height: 50px;
     float: right;
     clear: left;
-    margin-right: 200px;
+    margin-right: 220px;
     /*margin-left: 465px;*/
     padding-right: 80px;
 }
@@ -867,7 +867,7 @@ content {
 .bilde4 {
   /*  width: 325px;
     height: 460px;*/
-    width: 28.5%;
+    width: 29%;
     padding-bottom: 39.9%;
     float: left;
     clear: left;
@@ -892,7 +892,7 @@ content {
     padding-bottom: 39%;
     float: right;
     clear: left;
-    margin-right: 75px;
+    margin-right: 65px;
     /*margin-left: 325px;*/
     margin-top: 30px;
     background: url("../img/hjem/5.jpg") center;
@@ -904,7 +904,7 @@ content {
     height: 50px;
     float: right;
     clear: left;
-    margin-right: 75px;
+    margin-right: 65px;
 }
 
 
