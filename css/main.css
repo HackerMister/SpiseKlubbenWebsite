@@ -228,7 +228,7 @@ label[for=toggle] {
 
 .open-button {
     cursor: pointer;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 
@@ -377,12 +377,12 @@ content {
 /* når skjermen blir mindre enn 600px */
 
 @media only screen and (max-width: 600px) {
-    
+
 content {
-    
+
     margin-left: 20px;
     margin-right: 20px;
-    
+
 }
 
 }
@@ -628,7 +628,7 @@ content {
     height: 420px;
     width: 300px;
     margin: 20px 20px 15px 20px
-    
+
 }
 
 div.category {
@@ -936,6 +936,7 @@ div.category {
         text-align: left;
         margin-left: auto;
         margin-right: auto;
+        padding-top:30px;
 
     }
 
@@ -957,11 +958,11 @@ div.category {
             text-align: left;
             padding-right: 0;
             padding-left: 0;
-            font-size: 8pt;
+            font-size: 9pt;
         }
 
         .ahjem {
-            font-size: 8pt;
+            font-size: 9pt;
         }
 
         .bilde5 {
@@ -987,7 +988,7 @@ div.category {
         }
 
         #brødtekst_h {
-            font-size: 10pt;
+            font-size: 11pt;
             width: 90%;
 
         }
@@ -995,5 +996,3 @@ div.category {
     }
 
     /*-------------------------------------------------------------*/
-
-
