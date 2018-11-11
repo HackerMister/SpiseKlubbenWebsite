@@ -602,7 +602,7 @@ content {
 
 .category > p {
     padding: 8px;
-    
+
 }
 
 
@@ -769,7 +769,8 @@ div.category {
 
 #brødtekst_h {
     padding-top: 190px;
-    width: 500px;
+    width:48%;
+    /*width: 500px;*/
     float: left;
     font-size: 24pt;
 
@@ -779,9 +780,9 @@ div.category {
     /*siden CSS-Grid eller lignende måter å sette opp et gridsystem ikke er lov så kjører vi en manuell versjon ved kun hjelp av float og margin attributtr*/
     /* bestemmer bredden som vi lagde fra mockupsene*/
 /*    width: 575px;
-    height: 550px;*/
-    width: 50%;
-    padding-bottom: 45%;
+    height: 650px;*/
+    width: 50%;             /*aspect ratio som er hentet fra width og height over*/
+    padding-bottom: 56.7%;
     float: right;
     clear: right;
     margin-top: -20px;
@@ -794,7 +795,8 @@ div.category {
 
 .tekst1 {
     /*lager også en manuell tekstboks for hver bildediv for å gjøre det enklere og ryddig*/
-    width: 575px;
+    width: 50%;
+  /*  width: 575px;*/
     height: 50px;
     float: right;
     clear: right;
@@ -802,14 +804,14 @@ div.category {
 }
 
 .bilde2 {
-    width: 30%;
-    padding-bottom: 45%;
+    width: 28%;
+    padding-bottom: 42%;
 /*  width: 315px;
     height: 480px;*/
     float: left;
     clear: left;
     margin-left: 150px;
-    margin-top: -250px;
+    margin-top: -325px;
     ;
     background: url("../img/hjem/2.jpg") center;
     background-size: cover;
@@ -825,32 +827,38 @@ div.category {
 }
 
 .bilde3 {
-    width: 430px;
-    height: 545px;
-    float: left;
+
+  /*  width: 430px;
+    height: 545px;*/
+    width: 40%;
+    padding-bottom:50%;
+    float: right;
     clear: left;
-    margin-left: 465px;
+    margin-right: 200px;
     margin-top: 25px;
     background: url("../img/hjem/3.jpg") center;
     background-size: cover;
 }
 
 .tekst3 {
-    width: 430px;
+    width: 40%;
     height: 50px;
-    float: left;
+    float: right;
     clear: left;
-    margin-left: 465px;
-    padding-right: 120px;
+    margin-right: 200px;
+    /*margin-left: 465px;*/
+    padding-right: 80px;
 }
 
 
 .bilde4 {
-    width: 325px;
-    height: 460px;
+  /*  width: 325px;
+    height: 460px;*/
+    width: 28.5%;
+    padding-bottom: 39.9%;
     float: left;
     clear: left;
-    margin-top: -385px;
+    margin-top: -320px;
     background: url("../img/hjem/4.jpg") center;
     background-size: cover;
 }
@@ -864,22 +872,26 @@ div.category {
 }
 
 .bilde5 {
-    height: 465px;
-    width: 755px;
-    float: left;
+
+    /*height: 465px;
+    width: 755px;*/
+    width:65%;
+    padding-bottom: 39%;
+    float: right;
     clear: left;
-    margin-left: 325px;
+    margin-right: 75px;
+    /*margin-left: 325px;*/
     margin-top: 30px;
     background: url("../img/hjem/5.jpg") center;
     background-size: cover;
 }
 
 .tekst5 {
-    width: 755px;
+    width: 65%;
     height: 50px;
-    float: left;
+    float: right;
     clear: left;
-    margin-left: 325px;
+    margin-right: 75px;
 }
 
 
