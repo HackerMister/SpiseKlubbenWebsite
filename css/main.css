@@ -477,7 +477,7 @@ content {
 }
 .bildeWrapper ul.bildeGrid{
   margin: 0 auto;
-  columns: 4;
+  columns: 1;
   list-style-position: outside;
   padding-left: 0;
 }
@@ -542,6 +542,22 @@ content {
   height: 357px;
 
 }
+
+@media screen and (min-width: 540px) {
+.bildeWrapper ul.bildeGrid {
+    columns: 2;
+  }
+
+  @media screen and (min-width: 780px) {
+    .bildeWrapper ul.bildeGrid {
+      columns: 3;
+    }
+
+@media only screen and (min-width: 1050px) {
+  .bildeWrapper ul.bildeGrid {
+    columns: 4;
+  }
+
 
 /*
 
