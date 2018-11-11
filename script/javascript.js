@@ -127,3 +127,16 @@ for (bilde of bilder) {
 }
 }
 */
+
+function supportsImports() {
+    return 'import' in document.createElement('link');
+  }
+  
+  if (supportsImports()) {
+    // Good to go!
+    console.log("'import' supported")
+  } else {
+    // Use other libraries/require systems to load files.
+    console.log("'import' not supported");
+    
+  }
