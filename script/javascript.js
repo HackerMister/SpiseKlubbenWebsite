@@ -21,7 +21,41 @@ function scrollFunction() {
 }
 
 
+// template til footer:
 
+var link = document.querySelector('link[rel="import"]');
+
+// Clone the <template> in the import.
+var template = link.import.querySelector('.template-footer');
+var clone = document.importNode(template.content, true);
+
+document.querySelector('#putfooterhere').appendChild(clone);
+
+// www.html5rocks.com/en/tutorials/webcomponents/imports
+
+
+//template til navbar:
+
+var link = document.querySelector('link[rel="import"]');
+
+// Clone the <template> in the import.
+var template = link.import.querySelector('.template-navbar');
+var clone = document.importNode(template.content, true);
+
+document.querySelector('#navbar').appendChild(clone);
+
+//adds class 'active' til navbar, med stor tak til Bendik Schøder
+
+window.onload = function() { 
+let navSelectors = document.querySelectorAll('#navbar-right li a');
+  let pageName = window.location.pathname.split('/').pop();
+  for (let navSelector of navSelectors) {
+    let href = navSelector.href.split('/').pop();
+    if (href === pageName) {
+      navSelector.classList.add('active');
+    }
+  }
+}
 
 
 // script for oppskrift-oversikt
