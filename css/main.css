@@ -81,10 +81,6 @@ a {
 }
 
 #navbar-right a.active,
-/*#categories li.active,
-#categories li:hover,
-.category a:hover,
-.category p:hover*/
 {
     text-decoration: underline;
     text-underline-position: under;
@@ -593,48 +589,29 @@ content {
     font-size: 1.2em
 }
 
-.ctg_selector:hover, .ctg_selector.active{
+.ctg_selector:hover,
+.ctg_selector.active
+.category a:hover,
+.category > p:hover {
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: #c39c70;
   cursor: pointer;
 }
 
-/*resten af #categories li styling ligger under navbar stylingen*/
 
-
-
-/*
-.category div {
-    width: 236px;
-    height: 366px;
-    margin: 30px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+.category > p {
+    padding: 8px;
+    
 }
 
-.category div img {
-    height: 100%;
-}
 
-.category a {
-    font-size: 1.6em;
-
-}
-
-.category p {
-    font-size: 1em,
-}
-*/
-
-
-/*TIPS OG TRIKS CSS */
+/*TIPS OG TRIKS og OPPSKRIFTER CSS */
 
 .row div {
     float: left;
     box-sizing: border-box;
-    height: 420px;
+    height: 360px;
     width: 300px;
     margin: 20px 20px 15px 20px
 
@@ -649,6 +626,9 @@ div.category {
 }
 
 
+
+
+/*centrerer tipsa når der er 4, 3, 2 eller 1 bilde på rad*/
 
 .row {
     margin-left: calc((100vw - 1320px)/2 - 20px);
@@ -672,8 +652,6 @@ div.category {
     }
 }
 
-
-/*centrerer tipsa når der er 4, 3, 2 eller 1 bilde på rad*/
 
 
 /*TIPS OG TRIKS content sider css*/
