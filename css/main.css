@@ -783,7 +783,8 @@ div.category {
 
 #tittel_h {
     float: right;
-    width: 575px;
+    /*width: 575px;*/
+    width: 50%;
     font-size: 28pt;
     margin-bottom: 0;
 }
@@ -798,9 +799,11 @@ div.category {
 
 .bilde1 {
     /*siden CSS-Grid eller lignende måter å sette opp et gridsystem ikke er lov så kjører vi en manuell versjon ved kun hjelp av float og margin attributtr*/
-    width: 575px;
     /* bestemmer bredden som vi lagde fra mockupsene*/
-    height: 550px;
+/*    width: 575px;
+    height: 550px;*/
+    width: 50%;
+    padding-bottom: 45%;
     float: right;
     clear: right;
     margin-top: -20px;
@@ -821,8 +824,10 @@ div.category {
 }
 
 .bilde2 {
-    width: 315px;
-    height: 480px;
+    width: 30%;
+    padding-bottom: 45%;
+/*  width: 315px;
+    height: 480px;*/
     float: left;
     clear: left;
     margin-left: 150px;
