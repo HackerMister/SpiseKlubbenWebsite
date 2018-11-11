@@ -581,6 +581,9 @@ content {
 
 /* OPPSKRIFT-OVERSIKT css*/
 
+#categories {
+    margin-left: calc(50vw - 230px);
+}
 
 
 #categories li {
@@ -588,7 +591,7 @@ content {
     display: inline-block;
     padding:8px;
     overflow: hidden;
-    font-size: 1.2em
+    font-size: 1em
 }
 
 .ctg_selector:hover,
