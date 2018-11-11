@@ -47,7 +47,7 @@ document.querySelector('#navbar').appendChild(clone);
 //herfra forsøg på active
 //let siteSelectors = template.querySelectorAll('li');
 //console.log(siteSelectors);
-
+/*
 let nu = document.getElementById('navbar-right');
 let siteSelectors = nu.querySelectorAll('li');
 console.log(siteSelectors);
@@ -59,7 +59,7 @@ for (siteSelector of siteSelectors){
     if (sss == siteSelector.href) {
         siteSelector.classList.add('active');
     } console.log(siteSelector.nav);
-}
+}*/
 /*
 function makeNavActive() {
     let ss = document.URL;
@@ -90,6 +90,16 @@ function makeNavActive() {
 //        this.classList.add('active');
 //}
 
+window.onload = function() { 
+let navItems = document.querySelectorAll('#navbar-right li a');
+  let pageName = window.location.pathname.split('/').pop();
+  for (let item of navItems) {
+    let href = item.href.split('/').pop();
+    if (href === pageName) {
+      item.classList.add('active');
+    }
+  }
+};
 
 //hertil
 
