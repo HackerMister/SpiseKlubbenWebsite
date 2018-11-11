@@ -116,8 +116,15 @@ function showCategory() {
 
 
 let bilder = document.querySelectorAll('.bildeWrapper li')
-console.log(sif)
+
+
 
 for (bilde of bilder) {
-    bilde.
+    let galleri = document.querySelectorAll('bildeWrapper')
+    
+    bilde.onclick = function() {
+    
 }
+}
+
+
