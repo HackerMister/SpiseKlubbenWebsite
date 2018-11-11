@@ -24,14 +24,12 @@ function makeActive() {
     let c = this.title;
         for (button of buttons) {
             button.classList.remove("active");
-            if (c.indexOf(button.title) > -1) {
-                console.log("findes ikke");
+            //adds 'active' to the button that matches the selected category if the category is chosen from the div.category
+            if (c == button.title) {
+                button.classList.add('active');
             }
         }
         this.classList.add('active');
-    
-    //console.log(c);
-    //if (c.indexOf())
 }
 
 //shows the selected category
