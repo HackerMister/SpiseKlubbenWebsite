@@ -81,23 +81,24 @@ a {
 }
 
 #navbar-right a.active,
-#categories li.active,
+/*#categories li.active,
 #categories li:hover,
 .category a:hover,
-.category p:hover {
+.category p:hover*/
+{
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
 }
 
-#navbar-right li a:hover:not(.active) {
+#navbar-right li a:hover:not(.active)  {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
 }
 
 a:hover:not(.active),
-.eventText h2:hover {
+.eventText h2:hover{
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
@@ -587,8 +588,16 @@ content {
 #categories li {
     list-style-type: none;
     display: inline-block;
+    padding:8px;
     overflow: hidden;
     font-size: 1.2em
+}
+
+.ctg_selector:hover, .ctg_selector.active{
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #c39c70;
+  cursor: pointer;
 }
 
 /*resten af #categories li styling ligger under navbar stylingen*/
