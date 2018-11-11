@@ -362,7 +362,12 @@ content {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 
+}
+
+.kontakt_content{
+  /*text-align: center;*/
 }
 
 #kp3 {
@@ -955,7 +960,7 @@ content {
     float: right;
     clear: left;
     margin-right: 220px;
-    margin-top: 25px;
+    margin-top: 20px;
     background: url("../img/hjem/3.jpg") center;
     background-size: cover;
 }
