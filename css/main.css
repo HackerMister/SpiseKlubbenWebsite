@@ -80,12 +80,13 @@ a {
     /*  font-family: "Akkurat Light"*/
 }
 
-#navbar-right a.active,
-{
+#navbar-right a.active {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
 }
+
+
 
 #navbar-right li a:hover:not(.active)  {
     text-decoration: underline;
