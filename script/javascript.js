@@ -114,7 +114,7 @@ function showCategory() {
 
 //galleri js
 
-
+/*
 let bilder = document.querySelectorAll('.bildeWrapper li')
 
 for (bilde of bilder) {
@@ -126,5 +126,4 @@ for (bilde of bilder) {
         console.log(galleri);
 }
 }
-
-
+*/
