@@ -88,14 +88,14 @@ a {
 
 
 
-#navbar-right li a:hover:not(.active)  {
+#navbar-right li a:hover:not(.active) {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
 }
 
 a:hover:not(.active),
-.eventText h2:hover{
+.eventText h2:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #c39c70;
@@ -376,12 +376,12 @@ content {
 
 @media only screen and (max-width: 600px) {
 
-content {
+    content {
 
-    margin-left: 20px;
-    margin-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
 
-}
+    }
 
 }
 
@@ -473,28 +473,29 @@ content {
 
 
 .bildeWrapper {
-  padding: 0 2em;
-  text-align: center;
-}
-.bildeWrapper ul.bildeGrid{
-  margin: 0 auto;
-  columns: 1;
-  list-style-position: outside;
-  padding-left: 0;
+    padding: 0 2em;
+    text-align: center;
 }
 
-.bildeWrapper ul.bildeGrid li.bildeli{
-  margin-top:45px;
-  vertical-align: top;
-  display: inline-block;
+.bildeWrapper ul.bildeGrid {
+    margin: 0 auto;
+    columns: 1;
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+.bildeWrapper ul.bildeGrid li.bildeli {
+    margin-top: 45px;
+    vertical-align: top;
+    display: inline-block;
 
 }
 
 .bildeli {
-  width: 238px;
+    width: 238px;
 }
 
-.gal1{
+.gal1 {
 
     background: url("../img/gallery/dumplings.jpg") center;
     background-size: cover;
@@ -502,53 +503,60 @@ content {
 
 }
 
-.gal2{
+.gal2 {
 
     background: url("../img/gallery/fries.jpg") center;
     background-size: cover;
-      height:361px;
+    height: 361px;
 }
-.gal3{
-  background: url("../img/gallery/sushi3.jpg") center;
-  background-size: cover;
-  height: 372px;;
+
+.gal3 {
+    background: url("../img/gallery/sushi3.jpg") center;
+    background-size: cover;
+    height: 372px;
+    ;
 }
-.gal4{
-  background: url("../img/gallery/hånd i suppe.jpg") center;
-  background-size: cover;
-  height: 369px;
+
+.gal4 {
+    background: url("../img/gallery/hånd i suppe.jpg") center;
+    background-size: cover;
+    height: 369px;
 }
 
 .gal5 {
-  background: url("../img/gallery/granat.jpg") center;
-  background-size: cover;
-   height: 203px;
+    background: url("../img/gallery/granat.jpg") center;
+    background-size: cover;
+    height: 203px;
 }
-.gal6{
-  background: url("../img/gallery/kebab_spyd.jpg") center;
-  background-size: cover;
-  height: 304px;
+
+.gal6 {
+    background: url("../img/gallery/kebab_spyd.jpg") center;
+    background-size: cover;
+    height: 304px;
 
 }
 
-.gal7{
-  background: url("../img/gallery/lime.jpg") center;
-  background-size: cover;
-  height: 250px;
+.gal7 {
+    background: url("../img/gallery/lime.jpg") center;
+    background-size: cover;
+    height: 250px;
 
 }
-.gal8{
-  background: url("../img/gallery/glass.jpg") center;
-  background-size: cover;
-  height: 357px;
+
+.gal8 {
+    background: url("../img/gallery/glass.jpg") center;
+    background-size: cover;
+    height: 357px;
 
 }
-.gal9{
-  background: url("../img/gallery/frokost.jpg") center;
-  background-size: cover;
-  height: 357px;
+
+.gal9 {
+    background: url("../img/gallery/frokost.jpg") center;
+    background-size: cover;
+    height: 357px;
 
 }
+
 /*
 
 @media screen and (min-width: 540px) {
@@ -734,11 +742,11 @@ content {
     height: 360px;
     width: 300px;
     margin: 20px 20px 15px 20px
-
 }
 
 
-.row div a, .row div img {
+.row div a,
+.row div img {
     width: 100%;
 }
 
@@ -784,12 +792,17 @@ content {
 .tip-pic {
     width: 40%;
     float: left;
+    margin-top: 50px
 }
 
 .tip-text {
     width: 40%;
     float: right;
 
+}
+
+.tip-text h3 {
+    font-size: 3em
 }
 
 /*tips og triks content sider mindre enn 700px*/
@@ -821,6 +834,10 @@ content {
         min-width: 60vw;
 
 
+    }
+
+    .tip-text h3 {
+        font-size: 2em
     }
 
 
@@ -887,7 +904,7 @@ content {
 
 #brødtekst_h {
     padding-top: 190px;
-    width:48%;
+    width: 48%;
     /*width: 500px;*/
     float: left;
     font-size: 24pt;
@@ -897,9 +914,10 @@ content {
 .bilde1 {
     /*siden CSS-Grid eller lignende måter å sette opp et gridsystem ikke er lov så kjører vi en manuell versjon ved kun hjelp av float og margin attributtr*/
     /* bestemmer bredden som vi lagde fra mockupsene*/
-/*    width: 575px;
+    /*    width: 575px;
     height: 650px;*/
-    width: 50%;             /*aspect ratio som er hentet fra width og height over*/
+    width: 50%;
+    /*aspect ratio som er hentet fra width og height over*/
     padding-bottom: 56.7%;
     float: right;
     clear: right;
@@ -914,7 +932,7 @@ content {
 .tekst1 {
     /*lager også en manuell tekstboks for hver bildediv for å gjøre det enklere og ryddig*/
     width: 50%;
-  /*  width: 575px;*/
+    /*  width: 575px;*/
     height: 50px;
     float: right;
     clear: right;
@@ -924,7 +942,7 @@ content {
 .bilde2 {
     width: 28%;
     padding-bottom: 42%;
-/*  width: 315px;
+    /*  width: 315px;
     height: 480px;*/
     float: left;
     clear: left;
@@ -946,10 +964,10 @@ content {
 
 .bilde3 {
 
-  /*  width: 430px;
+    /*  width: 430px;
     height: 545px;*/
     width: 40%;
-    padding-bottom:50%;
+    padding-bottom: 50%;
     float: right;
     clear: left;
     margin-right: 220px;
@@ -970,7 +988,7 @@ content {
 
 
 .bilde4 {
-  /*  width: 325px;
+    /*  width: 325px;
     height: 460px;*/
     width: 29%;
     padding-bottom: 39.9%;
@@ -993,7 +1011,7 @@ content {
 
     /*height: 465px;
     width: 755px;*/
-    width:65%;
+    width: 65%;
     padding-bottom: 39%;
     float: right;
     clear: left;
@@ -1058,7 +1076,7 @@ content {
         text-align: left;
         margin-left: auto;
         margin-right: auto;
-        padding-top:30px;
+        padding-top: 30px;
 
     }
 
