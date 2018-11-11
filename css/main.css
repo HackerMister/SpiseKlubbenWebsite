@@ -569,21 +569,6 @@ content {
 */
 /*
 
-@media only screen and (max-width: 1050px) {
-  .bildeWrapper ul.bildeGrid {
-    columns: 3;
-  }
-
-  @media screen and (max-width: 780px) {
-    .bildeWrapper ul.bildeGrid {
-      columns: 2;
-    }
-
-    @media screen and (max-width: 580px) {
-    .bildeWrapper ul.bildeGrid {
-        columns: 1;
-      }
-
 */
 
 /*@-------------------------------------------------------------------*/
@@ -700,24 +685,25 @@ content {
 /* OPPSKRIFT-OVERSIKT css*/
 
 #categories {
-    margin-left: calc(50vw - 230px);
+    text-align: center;
+    padding:8px;
 }
 
 
 #categories li {
     list-style-type: none;
     display: inline-block;
-    padding:8px;
+    padding: 8px;
     overflow: hidden;
-    font-size: 1em
+    font-size: 1em;
+    border: 1px solid white;
 }
 
-.ctg_selector:hover,
+
 .ctg_selector.active,
 .category a:hover,
-.category > p:hover {
+.category > p:hover, .ctg_selector:hover{
   text-decoration: underline;
-  text-underline-position: under;
   text-decoration-color: #c39c70;
   cursor: pointer;
 }
