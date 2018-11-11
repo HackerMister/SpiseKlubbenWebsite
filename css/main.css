@@ -631,16 +631,15 @@ content {
     
 }
 
+div.category {
+    height: 550px;
+}
+
 .row div a, .row div img {
     width: 100%;
 }
 
-/*
-.category{
-    display: none;
 
-}
-*/
 
 .row {
     margin-left: calc((100vw - 1320px)/2 - 20px);
