@@ -692,6 +692,12 @@ content {
     font-size: 1em;
 }
 
+.ctg_selector{
+  color: #898988;
+  transition: 0.3s;
+
+}
+
 
 .ctg_selector.active,
 .category a:hover,
@@ -699,6 +705,10 @@ content {
   text-decoration: underline;
   text-decoration-color: #c39c70;
   cursor: pointer;
+}
+
+.ctg_selector:hover{
+  color: #f0f0f0;
 }
 
 .category {
