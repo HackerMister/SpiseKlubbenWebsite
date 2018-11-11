@@ -114,16 +114,53 @@ function showCategory() {
 
 //galleri js
 
-/*
+
 let bilder = document.querySelectorAll('.bildeWrapper li')
+let slideShow = document.getElementById('galleryWrapper');
 
 for (bilde of bilder) {
     let galleri = document.querySelectorAll('.bildeWrapper');
-    let slideShow = document.getElementById('galleryWrapper');
     bilde.onclick = function() {
         slideShow.style.display = 'block';
-        galleri.style.display = 'none';
+        //galleri.style.display = 'none';
         console.log(galleri);
 }
 }
-*/
+
+
+// Code source: https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+//press the escape key to escape slideshow
+
+window.addEventListener("keydown", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 27) {
+        slideShow.style.display = 'none';
+    }
+    //slideshow to the left when left arrow key is pushed
+    else if (event.keyCode === 37) {
+        plusDivs(-1)
+    }
+    //slideshow to the right when right arrow key is pushed
+    else if (event.keyCode === 39) {
+        plusDivs(+1)
+    }
+});
