@@ -667,7 +667,10 @@ content {
 .tip-cont {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 200px
+    margin-top: 200px;
+    margin-bottom: 100px;
+    min-height: 100vh;
+    
 }
 
 
