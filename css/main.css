@@ -612,7 +612,8 @@ content {
 /*se under oppskrifter for wrapper*/
 
 .ukasrett_title {
-    float: right
+    float: right;
+    width: 450px
 }
 
 .ukasrett_title h1 {
@@ -729,6 +730,10 @@ content {
     width: 100%;
 }
 
+
+.row p {
+    font-weight: bold;
+}
 
 
 
