@@ -600,11 +600,18 @@ content {
 }
 
 .category {
-    height: 620px !important;
+    height: 570px !important;
+}
+
+
+.category a p {
+    margin-bottom: 0;
+    
 }
 
 .category > p {
-    padding: 8px;
+    font-size: 0.8em;
+    padding: 8px 6px 8px 10px;
     float: left;
     
 }
