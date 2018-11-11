@@ -595,7 +595,7 @@ content {
 }
 
 .ctg_selector:hover,
-.ctg_selector.active
+.ctg_selector.active,
 .category a:hover,
 .category > p:hover {
   text-decoration: underline;
