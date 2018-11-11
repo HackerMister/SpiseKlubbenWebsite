@@ -37,9 +37,11 @@ document.querySelector('#putfooterhere').appendChild(clone);
 //template til navbar:
 
 var link = document.querySelector('link[rel="import"]');
+var currentScript = document.currentScript.ownerDocument;
 
 // Clone the <template> in the import.
-var template = link.import.querySelector('.template-navbar');
+//var template = link.import.querySelector('.template-navbar');
+var template = currentScript.getElementById('.template-navbar')
 var clone = document.importNode(template.content, true);
 
 document.querySelector('#navbar').appendChild(clone);
