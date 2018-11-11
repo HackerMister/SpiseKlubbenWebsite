@@ -603,32 +603,6 @@ content {
 /*resten af #categories li styling ligger under navbar stylingen*/
 
 
-
-/*
-.category div {
-    width: 236px;
-    height: 366px;
-    margin: 30px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.category div img {
-    height: 100%;
-}
-
-.category a {
-    font-size: 1.6em;
-
-}
-
-.category p {
-    font-size: 1em,
-}
-*/
-
-
 /*TIPS OG TRIKS CSS */
 
 .row div {
