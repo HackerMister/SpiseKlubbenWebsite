@@ -45,50 +45,6 @@ var clone = document.importNode(template.content, true);
 document.querySelector('#navbar').appendChild(clone);
 
 //herfra forsøg på active
-//let siteSelectors = template.querySelectorAll('li');
-//console.log(siteSelectors);
-/*
-let nu = document.getElementById('navbar-right');
-let siteSelectors = nu.querySelectorAll('li');
-console.log(siteSelectors);
-
-for (siteSelector of siteSelectors){
-//    siteSelector.addEventListener('click', makeNavActive)
-    console.log(siteSelector);
-    let sss = document.URL;
-    if (sss == siteSelector.href) {
-        siteSelector.classList.add('active');
-    } console.log(siteSelector.nav);
-}*/
-/*
-function makeNavActive() {
-    let ss = document.URL;
-    console.log("halloooooo");
-        for (siteSelector of siteSelectors) {
-            siteSelector.classList.remove("active");
-            console.log(siteSelector);
-            if (ss == siteSelector.href) {
-                siteSelector.classList.add('active');
-            }
-        }
-//        this.classList.add('active');
-}
-*/
-
-
-//for (nunu of nunus){
-//    nunu.addEventListener('click', makeNavActive)
-//}
-//
-//function makeNavActive() {
-//    let c = this.title;
-//        for (nunu of nunus) {
-//            nunu.classList.remove("active");
-//           
-//            }
-//        }
-//        this.classList.add('active');
-//}
 
 window.onload = function() { 
 let navItems = document.querySelectorAll('#navbar-right li a');
@@ -99,16 +55,15 @@ let navItems = document.querySelectorAll('#navbar-right li a');
       item.classList.add('active');
     }
   }
-};
+}
 
-//hertil
 
 // script for oppskrift-oversikt
 
 let buttons = document.querySelectorAll('.ctg_selector');
 
 let categories = document.querySelectorAll('.category');
-console.log(buttons);
+
 
 let smallButtons = document.querySelectorAll('.category > p');
 
@@ -157,4 +112,12 @@ function showCategory() {
     }
 }
 
+//hilsen til shivam
 
+
+let bilder = document.querySelectorAll('.bildeWrapper li')
+console.log(sif)
+
+for (bilde of bilder) {
+    bilde.
+}
