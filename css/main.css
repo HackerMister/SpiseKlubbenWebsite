@@ -599,14 +599,18 @@ content {
   cursor: pointer;
 }
 
+.category {
+    height: 620px !important;
+}
 
 .category > p {
     padding: 8px;
+    float: left;
     
 }
 
 
-/*TIPS OG TRIKS og OPPSKRIFTER CSS */
+/*TIPS OG TRIKS CSS */
 
 .row div {
     float: left;
@@ -617,9 +621,6 @@ content {
 
 }
 
-div.category {
-    height: 550px;
-}
 
 .row div a, .row div img {
     width: 100%;
