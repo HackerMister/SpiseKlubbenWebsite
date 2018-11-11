@@ -581,6 +581,8 @@ content {
 
 /* OPPSKRIFT-OVERSIKT css*/
 
+
+
 #categories li {
     list-style-type: none;
     display: inline-block;
@@ -605,6 +607,7 @@ content {
 
 
 .category a p {
+    font-size: 1.2em;
     margin-bottom: 0;
     
 }
@@ -613,7 +616,6 @@ content {
     font-size: 0.8em;
     padding: 8px 6px 8px 10px;
     float: left;
-    
 }
 
 
@@ -667,10 +669,7 @@ content {
 .tip-cont {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    min-height: 100vh;
-    
+    margin-top: 200px
 }
 
 
