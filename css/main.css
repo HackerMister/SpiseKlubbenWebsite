@@ -496,7 +496,7 @@ content {
 
 .gal1{
 
-    background: url("../img/gallery/dumplings.jpg") center; /*1*/
+    background: url("../img/gallery/dumplings.jpg") center; 
     background-size: cover;
     height: 328px;
 
@@ -504,41 +504,47 @@ content {
 
 .gal2{
 
-    background: url("../img/gallery/fries.jpg") center; /*5*/
+    background: url("../img/gallery/fries.jpg") center;
     background-size: cover;
       height:361px;
 }
 .gal3{
-  background: url("../img/gallery/sushi3.jpg") center; /*2*/
+  background: url("../img/gallery/sushi3.jpg") center;
   background-size: cover;
   height: 372px;;
 }
 .gal4{
-  background: url("../img/gallery/hånd i suppe.jpg") center; /*6*/
+  background: url("../img/gallery/hånd i suppe.jpg") center;
   background-size: cover;
   height: 369px;
 }
 
 .gal5 {
-  background: url("../img/gallery/granat.jpg") center; /*3*/
+  background: url("../img/gallery/granat.jpg") center;
   background-size: cover;
    height: 203px;
 }
 .gal6{
-  background: url("../img/gallery/kebab_spyd.jpg") center; /*7*/
+  background: url("../img/gallery/kebab_spyd.jpg") center;
   background-size: cover;
   height: 304px;
 
 }
 
 .gal7{
-  background: url("../img/gallery/glass.jpg") center; /*4*/
+  background: url("../img/gallery/lime.jpg") center;
   background-size: cover;
-  height: 312px;
+  height: 250px;
 
 }
 .gal8{
-  background: url("../img/gallery/frokost.jpg") center; /*4*/
+  background: url("../img/gallery/glass.jpg") center;
+  background-size: cover;
+  height: 357px;
+
+}
+.gal9{
+  background: url("../img/gallery/frokost.jpg") center;
   background-size: cover;
   height: 357px;
 
